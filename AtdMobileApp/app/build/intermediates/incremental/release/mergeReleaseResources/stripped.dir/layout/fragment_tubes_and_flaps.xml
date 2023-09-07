@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.product.TubesAndFlapsFragment">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/forFooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tubesAndFlapstvInst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Dummy"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/tubesAndFlapsTypeRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tubesAndFlapstvInst">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/atd_blue"
+                    android:checked="true"
+                    android:fontFamily="@font/arial"
+                    android:text="@string/both"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/atd_blue"
+                    android:fontFamily="@font/arial"
+                    android:text="@string/tubes"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/atd_blue"
+                    android:fontFamily="@font/arial"
+                    android:text="@string/flaps"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tubesAndFlapsbrands"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/arial"
+                android:text="@string/brand"
+                android:textColor="@color/dusty_gray"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tubesAndFlapstvInst"
+                app:layout_constraintTop_toBottomOf="@+id/tubesAndFlapsTypeRadioGroup" />
+
+            <TextView
+                android:id="@+id/tubesAndFlapsbrandsHint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/arial"
+                android:text="@string/all"
+                android:textColor="@color/dusty_gray"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tubesAndFlapsbrands"
+                app:layout_constraintTop_toBottomOf="@+id/tubesAndFlapsbrands"
+                app:layout_constraintEnd_toStartOf="@+id/tubesAndFlapsBrandDropMenu"/>
+
+            <View
+                android:id="@+id/tubesAndFlapsviewDivider4"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/atd_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tubesAndFlapsbrandsHint"
+                app:layout_constraintTop_toBottomOf="@+id/tubesAndFlapsbrandsHint" />
+
+            <ImageView
+                android:id="@+id/tubesAndFlapsBrandDropMenu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/right_arrow"
+                app:layout_constraintBottom_toTopOf="@+id/tubesAndFlapsviewDivider4"
+                app:layout_constraintEnd_toEndOf="@+id/tubesAndFlapsviewDivider4"
+                app:layout_constraintTop_toTopOf="@+id/tubesAndFlapsbrandsHint"
+                app:tint="@color/atd_blue" />
+
+
+            <TextView
+                android:id="@+id/tubesAndFlapssupplierName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/arial"
+                android:text="@string/supplier_number"
+                android:textColor="@color/dusty_gray"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tubesAndFlapsviewDivider4"
+                app:layout_constraintTop_toBottomOf="@+id/tubesAndFlapsbrandsHint" />
+
+            <EditText
+                android:id="@+id/tubesAndFlapssupplierHint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/arial"
+                android:hint="@string/enter_supplier_number"
+                android:inputType="textVisiblePassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dusty_gray"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tubesAndFlapssupplierName"
+                app:layout_constraintTop_toBottomOf="@+id/tubesAndFlapssupplierName"
+                app:layout_constraintEnd_toEndOf="@+id/tubesAndFlapsviewDivider7"/>
+
+            <View
+                android:id="@+id/tubesAndFlapsviewDivider7"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/atd_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tubesAndFlapssupplierHint"
+                app:layout_constraintTop_toBottomOf="@+id/tubesAndFlapssupplierHint" />
+
+            <TextView
+                android:id="@+id/tubesAndFlapsatdPartNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/arial"
+                android:text="@string/atd_part_number"
+                android:textColor="@color/dusty_gray"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tubesAndFlapsviewDivider7"
+                app:layout_constraintTop_toBottomOf="@+id/tubesAndFlapsviewDivider7" />
+
+            <EditText
+                android:id="@+id/tubesAndFlapsatdPartNumberHint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/arial"
+                android:hint="@string/enter_part_numbner"
+                android:inputType="textVisiblePassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dusty_gray"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tubesAndFlapsatdPartNumber"
+                app:layout_constraintTop_toBottomOf="@+id/tubesAndFlapsatdPartNumber"
+                app:layout_constraintEnd_toEndOf="@+id/tubesAndFlapsviewDivider8"/>
+
+            <View
+                android:id="@+id/tubesAndFlapsviewDivider8"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/atd_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tubesAndFlapsatdPartNumberHint"
+                app:layout_constraintTop_toBottomOf="@+id/tubesAndFlapsatdPartNumberHint" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+    <FrameLayout
+        android:id="@+id/forFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <include
+            android:id="@+id/bottomButtons"
+            layout="@layout/product_search_footer"
+            app:flow_verticalAlign="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

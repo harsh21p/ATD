@@ -1,0 +1,510 @@
+[
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/custom_layout.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/custom_layout.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/order_item.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/order_item.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_product_attributes.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_product_attributes.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_my_list.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_my_list.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_wheel_accessories.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_wheel_accessories.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_make.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_make.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_deliverydayandwindow.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_deliverydayandwindow.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/notification.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/notification.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/date_select_layout.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/date_select_layout.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_barcode.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_barcode.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_tires_brand.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_tires_brand.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_choose_profile.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_choose_profile.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/cart_header_layout.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/cart_header_layout.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_o_e_size.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_o_e_size.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_value_select.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_value_select.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_select_location.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_select_location.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_vehicle_result.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_vehicle_result.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_licence_plate.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_licence_plate.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_quantity_and_delivery.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_quantity_and_delivery.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_supplies_type.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_supplies_type.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/custom_preference_delete_layout.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/custom_preference_delete_layout.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/order_details_item.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/order_details_item.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_barcode_search.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_barcode_search.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/speech_layout.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/speech_layout.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/reject_dialog.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/reject_dialog.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/search_header.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/search_header.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/pickup_layout.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/pickup_layout.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_order_complete.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_order_complete.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_welcome.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_welcome.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/my_list_details_child_items.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/my_list_details_child_items.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_key_word_search.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_key_word_search.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_v_i_n.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_v_i_n.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/nested_item.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/nested_item.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/row_layout_account_rc.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/row_layout_account_rc.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/quote_child_product_item.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/quote_child_product_item.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_my_orders_search.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_my_orders_search.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_filter.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_filter.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/alert.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/alert.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/marketing_programs.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/marketing_programs.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_my_garage.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_my_garage.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/large_image.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/large_image.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_product_delivery.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_product_delivery.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/submit_approvals_product_ui.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/submit_approvals_product_ui.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/diameter_option_item.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/diameter_option_item.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/location.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/location.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/quote_fees_services_custom_layout.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/quote_fees_services_custom_layout.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_cart.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_cart.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_supplies.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_supplies.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_select_state.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_select_state.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_product.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_product.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_my_order_details.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_my_order_details.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/product_search_buttons.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/product_search_buttons.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_product_details.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_product_details.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/list_name_update.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/list_name_update.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_tools.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_tools.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/select_location_item.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/select_location_item.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_home_screen.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_home_screen.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_tire_types.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_tire_types.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/custom_layout_years.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/custom_layout_years.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/pickupalert_layout.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/pickupalert_layout.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_rebate.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_rebate.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_on_boarding.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_on_boarding.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/vehicle_result_list_layout.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/vehicle_result_list_layout.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/search_results_icon_key.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/search_results_icon_key.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/mylist_child_items.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/mylist_child_items.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/select_option_item.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/select_option_item.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_states.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_states.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/select_option_list.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/select_option_list.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_frequency_dialog.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_frequency_dialog.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/preferences_custom_quantity_layout.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/preferences_custom_quantity_layout.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_my_quots.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_my_quots.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/addcart_dialog.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/addcart_dialog.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_sub_home.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_sub_home.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_model.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_model.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/custom_delete_layout.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/custom_delete_layout.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_sort.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_sort.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/product_search_footer.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/product_search_footer.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/business_days.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/business_days.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/product_top_list_item.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/product_top_list_item.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_preferences.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_preferences.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_checkout.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_checkout.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_vehicle_search.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_vehicle_search.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_submit.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_submit.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_my_orders.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_my_orders.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/mylist_sorting.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/mylist_sorting.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/status_custom_layout.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/status_custom_layout.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_account.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_account.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_create_my_list.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_create_my_list.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/submit_approvals.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/submit_approvals.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/keyword_search_result_item.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/keyword_search_result_item.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/comments_custom_layout.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/comments_custom_layout.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/quotes_subtotal_fees_services_custom_layout.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/quotes_subtotal_fees_services_custom_layout.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_wheel_accessories_type.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_wheel_accessories_type.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/quote_details_product_item.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/quote_details_product_item.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/approve_reject_buttons.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/approve_reject_buttons.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/activity_main.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/each_item.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/each_item.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_view_my_quotes.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_view_my_quotes.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_keyword_search_resukts.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_keyword_search_resukts.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_my_list_details.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_my_list_details.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_stream_lined_search.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_stream_lined_search.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_tire_repair.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_tire_repair.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/recent_item.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/recent_item.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_position.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_position.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_delete_quote.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_delete_quote.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/dialog_date_range.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/dialog_date_range.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_splash.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_splash.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_tubes_and_flaps.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_tubes_and_flaps.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_year.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_year.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/custom_quotes_saved.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/custom_quotes_saved.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/myquotes_item.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/myquotes_item.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_login.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_wheels.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_wheels.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_quotes_filter.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_quotes_filter.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_trim.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_trim.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_edit_quote.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_edit_quote.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/ocr_licence_plate.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/ocr_licence_plate.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_option.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_option.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_approvals.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_approvals.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_tires.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_tires.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_speed_rating.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_speed_rating.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_seasonal_designation.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_seasonal_designation.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/cart_item.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/cart_item.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/toast.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/toast.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/approvals_item.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/approvals_item.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/row_layout_my_garage_rc.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/row_layout_my_garage_rc.xml"
+    },
+    {
+        "merged": "com.atd.atdmobileapp-mergeReleaseResources-70:/layout/fragment_size.xml",
+        "source": "com.atd.atdmobileapp-main-72:/layout/fragment_size.xml"
+    }
+]

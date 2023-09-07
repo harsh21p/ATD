@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyCustomAttributes">
+        <attr name="calendarBackgroundColor" format="color" />
+        <attr name="calendarTextColor" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.bottomnavigation.account.AccountFragment" >
+
+    <TextView
+        android:id="@+id/tv_location_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/arial"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/dummyText"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4sp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/arial"
+        android:text="@string/dummyText"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_location_number"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location_number" />
+
+    <ImageView
+        android:id="@+id/iv_profile_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/account"
+        app:tint="@color/atd_blue"
+        app:layout_constraintStart_toStartOf="@+id/tv_address"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/dummyText"
+        android:textColor="@color/black"
+        android:lineSpacingExtra="4sp"
+        android:fontFamily="@font/arial"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_profile_icon"
+        app:layout_constraintStart_toEndOf="@+id/iv_profile_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_profile_icon" />
+
+    <ImageView
+        android:id="@+id/iv_home_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/addreshome"
+        app:layout_constraintStart_toStartOf="@+id/iv_profile_icon"
+        app:layout_constraintTop_toBottomOf="@+id/iv_profile_icon" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4sp"
+        android:layout_marginStart="8dp"
+        android:text="@string/dummyText"
+        android:textColor="@color/black"
+        android:fontFamily="@font/arial"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_home_icon"
+        app:layout_constraintStart_toEndOf="@+id/iv_home_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_home_icon" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/call_icon"
+        app:layout_constraintStart_toStartOf="@+id/iv_home_icon"
+        app:layout_constraintTop_toBottomOf="@+id/iv_home_icon" />
+
+    <TextView
+        android:id="@+id/tvCustomerCare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/customer_care_1_800_511_1226"
+        android:textColor="@color/black"
+        android:fontFamily="@font/arial"
+        android:lineSpacingExtra="4sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/lightgreay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCustomerCare"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_account"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_version"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewDivider" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/arial"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/atdmobile_version"
+        android:textColor="@color/lightgreay"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pattern_one_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvVersionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/arial"
+        android:lineSpacingExtra="4sp"
+        android:text=""
+        android:textColor="@color/lightgreay"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_version"
+        app:layout_constraintStart_toEndOf="@+id/tv_version"
+        app:layout_constraintTop_toTopOf="@+id/tv_version" />
+</androidx.constraintlayout.widget.ConstraintLayout>

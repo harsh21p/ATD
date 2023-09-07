@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.product.tires.TiresFragment">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:flow_verticalAlign="top"
+        app:layout_constraintBottom_toTopOf="@+id/forFooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:id="@+id/product_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/nested_constraint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvInst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Dummy"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/nested_constraint" />
+
+                <TextView
+                    android:id="@+id/prodCat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/arial"
+                    android:text="@string/product_category"
+                    android:textColor="@color/dusty_gray"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tvInst"
+                    app:layout_constraintTop_toBottomOf="@+id/tvInst" />
+
+                <TextView
+                    android:id="@+id/prodCaHint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/arial"
+                    android:text="@string/passenger_light"
+                    android:textColor="@color/dusty_gray"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/prodCat"
+                    app:layout_constraintTop_toBottomOf="@+id/prodCat"
+                    app:layout_constraintEnd_toStartOf="@+id/prodCatDropMenu"/>
+
+                <View
+                    android:id="@+id/viewDivider2"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@color/atd_blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/prodCaHint"
+                    app:layout_constraintTop_toBottomOf="@+id/prodCaHint" />
+
+                <ImageView
+                    android:id="@+id/prodCatDropMenu"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/arrow_down_blue"
+                    app:layout_constraintBottom_toTopOf="@+id/viewDivider2"
+                    app:layout_constraintEnd_toEndOf="@+id/viewDivider2" />
+
+                <TextView
+                    android:id="@+id/tire_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/arial"
+                    android:text="@string/tire_size"
+                    android:textColor="@color/dusty_gray"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/prodCaHint"
+                    app:layout_constraintTop_toBottomOf="@+id/viewDivider2" />
+
+                <EditText
+                    android:id="@+id/et_tire_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/arial"
+                    android:hint="@string/e_g_2256517_or_225_65r17"
+                    android:inputType="textVisiblePassword"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dusty_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/viewDivider3"
+                    app:layout_constraintStart_toStartOf="@+id/tire_size"
+                    app:layout_constraintTop_toBottomOf="@+id/tire_size" />
+
+                <View
+                    android:id="@+id/viewDivider3"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@color/atd_blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/et_tire_size"
+                    app:layout_constraintTop_toBottomOf="@+id/et_tire_size" />
+
+                <ImageView
+                    android:id="@+id/productWarning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/product_warning"
+                    app:layout_constraintTop_toBottomOf="@id/viewDivider3"
+                    app:layout_constraintStart_toStartOf="@id/viewDivider3"
+                    android:layout_marginTop="2dp"
+                    android:visibility="invisible"/>
+
+
+                <TextView
+                    android:id="@+id/brands"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/arial"
+                    android:text="@string/brand"
+                    android:textColor="@color/dusty_gray"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/et_tire_size"
+                    app:layout_constraintTop_toBottomOf="@+id/viewDivider3" />
+
+                <TextView
+                    android:id="@+id/brandsHint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/arial"
+                    android:text="@string/all"
+                    android:textColor="@color/dusty_gray"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/brands"
+                    app:layout_constraintTop_toBottomOf="@+id/brands"
+                    app:layout_constraintEnd_toStartOf="@+id/prodBrandDropMenu"/>
+
+                <View
+                    android:id="@+id/viewDivider4"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@color/dusty_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/brandsHint"
+                    app:layout_constraintTop_toBottomOf="@+id/brandsHint" />
+
+                <ImageView
+                    android:id="@+id/prodBrandDropMenu"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/right_arrow"
+                    app:tint="@color/dusty_gray"
+                    app:layout_constraintBottom_toTopOf="@+id/viewDivider4"
+                    app:layout_constraintEnd_toEndOf="@+id/viewDivider4"
+                    app:layout_constraintTop_toTopOf="@+id/brandsHint" />
+
+                <TextView
+                    android:id="@+id/sppedRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/speed_rating"
+                    app:layout_constraintStart_toStartOf="@+id/viewDivider4"
+                    app:layout_constraintTop_toBottomOf="@+id/viewDivider4" />
+
+                <TextView
+                    android:id="@+id/speedHint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/arial"
+                    android:maxLines="1"
+                    android:maxEms="8"
+                    android:text="@string/all"
+                    android:textColor="@color/dusty_gray"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/sppedRating"
+                    app:layout_constraintTop_toBottomOf="@+id/sppedRating"
+                    app:layout_constraintEnd_toStartOf="@+id/speedDropMenu"/>
+
+                <ImageView
+                    android:id="@+id/speedDropMenu"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="40dp"
+                    android:src="@drawable/arrow_down"
+                    app:layout_constraintBottom_toTopOf="@+id/viewDivider5"
+                    app:layout_constraintEnd_toEndOf="@+id/viewDivider5"
+                    app:tint="@color/dusty_gray"
+                    app:layout_constraintStart_toEndOf="@+id/sppedRating" />
+
+                <View
+                    android:id="@+id/viewDivider5"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@color/dusty_gray"
+                    app:layout_constraintEnd_toStartOf="@+id/seasonalDesg"
+                    app:layout_constraintStart_toStartOf="@+id/speedHint"
+                    app:layout_constraintTop_toBottomOf="@+id/speedHint" />
+
+
+                <TextView
+                    android:id="@+id/seasonalDesg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seasonal_designation"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/sppedRating"
+                    app:layout_constraintTop_toTopOf="@+id/sppedRating" />
+
+                <TextView
+                    android:id="@+id/seasonHint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/arial"
+                    android:maxLines="1"
+                    android:maxEms="8"
+                    android:text="@string/all"
+                    android:textColor="@color/dusty_gray"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/seasonalDesg"
+                    app:layout_constraintTop_toBottomOf="@+id/seasonalDesg"
+                    app:layout_constraintEnd_toStartOf="@id/seasonalMenu"/>
+
+                <ImageView
+                    android:id="@+id/seasonalMenu"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="40dp"
+                    android:src="@drawable/arrow_down"
+                    app:tint="@color/dusty_gray"
+                    app:layout_constraintBottom_toTopOf="@+id/viewDivider6"
+                    app:layout_constraintStart_toEndOf="@+id/seasonalDesg"
+                    app:layout_constraintEnd_toEndOf="@+id/viewDivider6"/>
+
+                <View
+                    android:id="@+id/viewDivider6"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@color/dusty_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/seasonalDesg"
+                    app:layout_constraintTop_toTopOf="@+id/viewDivider5" />
+
+
+                <TextView
+                    android:id="@+id/atdPartNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/arial"
+                    android:text="@string/atd_part_number"
+                    android:textColor="@color/dusty_gray"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/viewDivider7"
+                    app:layout_constraintTop_toBottomOf="@+id/viewDivider7" />
+
+                <EditText
+                    android:id="@+id/atdPartNumberHint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/arial"
+                    android:textSize="14sp"
+                    android:background="@color/transparent"
+                    android:inputType="textVisiblePassword"
+                    android:hint="@string/enter_part_numbner"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dusty_gray"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/atdPartNumber"
+                    app:layout_constraintTop_toBottomOf="@+id/atdPartNumber"
+                    app:layout_constraintEnd_toEndOf="@+id/viewDivider8"/>
+
+                <View
+                    android:id="@+id/viewDivider8"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/atd_blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/atdPartNumberHint"
+                    app:layout_constraintTop_toBottomOf="@+id/atdPartNumberHint" />
+
+
+                <TextView
+                    android:id="@+id/supplierName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/arial"
+                    android:text="@string/supplier_number"
+                    android:textColor="@color/dusty_gray"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/viewDivider5"
+                    app:layout_constraintTop_toBottomOf="@+id/viewDivider5" />
+
+                <EditText
+                    android:id="@+id/supplierHint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/arial"
+                    android:textSize="14sp"
+                    android:hint="@string/enter_supplier_number"
+                    android:background="@android:color/transparent"
+                    android:inputType="textVisiblePassword"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dusty_gray"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/supplierName"
+                    app:layout_constraintTop_toBottomOf="@+id/supplierName"
+                    app:layout_constraintEnd_toEndOf="@+id/viewDivider7"/>
+
+                <View
+                    android:id="@+id/viewDivider7"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@color/atd_blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/supplierHint"
+                    app:layout_constraintTop_toBottomOf="@+id/supplierHint" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </FrameLayout>
+
+  <FrameLayout
+      android:id="@+id/forFooter"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent">
+      <include
+          android:id="@+id/bottomButtons"
+          layout="@layout/product_search_footer"
+          app:flow_verticalAlign="bottom"
+          app:layout_constraintBottom_toBottomOf="parent"/>
+  </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

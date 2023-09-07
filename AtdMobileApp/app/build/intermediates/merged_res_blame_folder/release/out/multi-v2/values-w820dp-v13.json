@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.atd.atdmobileapp-mergeReleaseResources-69:/values-w820dp-v13/values-w820dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/harshadpa/Desktop/new/ATD/AtdMobileApp/app/src/main/res/values-w820dp/dimens.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "291",
+                        "endColumns": "57",
+                        "endOffsets": "344"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "154",
+                        "endColumns": "57",
+                        "endOffsets": "207"
+                    }
+                },
+                {
+                    "source": "/Users/harshadpa/Desktop/new/ATD/AtdMobileApp/app/src/main/res/values-w820dp/strings.xml",
+                    "from": {
+                        "startLines": "3,6,5,7,2,4",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "105,252,191,294,55,151",
+                        "endColumns": "45,41,60,65,49,39",
+                        "endOffsets": "146,289,247,355,100,186"
+                    },
+                    "to": {
+                        "startLines": "5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "212,258,300,361,427,477",
+                        "endColumns": "45,41,60,65,49,39",
+                        "endOffsets": "253,295,356,422,472,512"
+                    }
+                },
+                {
+                    "source": "/Users/harshadpa/Desktop/new/ATD/AtdMobileApp/app/src/main/res/values-w820dp/colors.xml",
+                    "from": {
+                        "startLines": "3,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "108,55",
+                        "endColumns": "45,52",
+                        "endOffsets": "149,103"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,101",
+                        "endColumns": "45,52",
+                        "endOffsets": "96,149"
+                    }
+                }
+            ]
+        }
+    ]
+}

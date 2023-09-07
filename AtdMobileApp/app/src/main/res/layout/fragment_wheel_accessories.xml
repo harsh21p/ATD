@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.product.wheelaccessories.WheelAccessoriesFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/forFooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/wheelAcctvInst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Dummy"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvWheelAccType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/arial"
+                android:text="@string/wheel_accessories_type"
+                android:textColor="@color/dusty_gray"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/wheelAcctvInst"
+                app:layout_constraintTop_toBottomOf="@+id/wheelAcctvInst" />
+
+            <TextView
+                android:id="@+id/wheelAccType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/arial"
+                android:text="@string/caps"
+                android:textColor="@color/dusty_gray"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/wheelAccDropMenu"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvWheelAccType"
+                app:layout_constraintTop_toBottomOf="@+id/tvWheelAccType" />
+
+            <View
+                android:id="@+id/wheelAccviewDivider2"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/atd_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/wheelAccType"
+                app:layout_constraintTop_toBottomOf="@+id/wheelAccType" />
+
+            <ImageView
+                android:id="@+id/wheelAccDropMenu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_down_blue"
+                app:layout_constraintBottom_toTopOf="@+id/wheelAccviewDivider2"
+                app:layout_constraintEnd_toEndOf="@+id/wheelAccviewDivider2"
+                app:layout_constraintTop_toTopOf="@+id/wheelAccType" />
+
+            <TextView
+                android:id="@+id/wheelAccbrands"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/arial"
+                android:text="@string/brand"
+                android:textColor="@color/dusty_gray"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/wheelAccType"
+                app:layout_constraintTop_toBottomOf="@+id/wheelAccviewDivider2" />
+
+            <TextView
+                android:id="@+id/wheelAccbrandsHint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/arial"
+                android:text="@string/all"
+                android:textColor="@color/dusty_gray"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/wheelAccBrandDropMenu"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/wheelAccbrands"
+                app:layout_constraintTop_toBottomOf="@+id/wheelAccbrands" />
+
+            <View
+                android:id="@+id/wheelAccviewDivider4"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/atd_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/wheelAccbrandsHint"
+                app:layout_constraintTop_toBottomOf="@+id/wheelAccbrandsHint" />
+
+            <ImageView
+                android:id="@+id/wheelAccBrandDropMenu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/right_arrow"
+                app:layout_constraintBottom_toTopOf="@+id/wheelAccviewDivider4"
+                app:layout_constraintEnd_toEndOf="@+id/wheelAccviewDivider4"
+                app:layout_constraintTop_toTopOf="@+id/wheelAccbrandsHint"
+                app:tint="@color/atd_blue" />
+
+
+            <TextView
+                android:id="@+id/wheelAccsupplierName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/arial"
+                android:text="@string/supplier_number"
+                android:textColor="@color/dusty_gray"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/wheelAccviewDivider4"
+                app:layout_constraintTop_toBottomOf="@+id/wheelAccbrandsHint" />
+
+            <EditText
+                android:id="@+id/wheelAccsupplierHint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/arial"
+                android:hint="@string/enter_supplier_number"
+                android:inputType="textVisiblePassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dusty_gray"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/wheelAccviewDivider7"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/wheelAccsupplierName"
+                app:layout_constraintTop_toBottomOf="@+id/wheelAccsupplierName" />
+
+            <View
+                android:id="@+id/wheelAccviewDivider7"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/atd_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/wheelAccsupplierHint"
+                app:layout_constraintTop_toBottomOf="@+id/wheelAccsupplierHint" />
+
+            <TextView
+                android:id="@+id/wheelAccatdPartNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/arial"
+                android:text="@string/atd_part_number"
+                android:textColor="@color/dusty_gray"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/wheelAccviewDivider7"
+                app:layout_constraintTop_toBottomOf="@+id/wheelAccviewDivider7" />
+
+            <EditText
+                android:id="@+id/wheelAccatdPartNumberHint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/arial"
+                android:hint="@string/enter_part_numbner"
+                android:inputType="textVisiblePassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dusty_gray"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/wheelAccviewDivider8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/wheelAccatdPartNumber"
+                app:layout_constraintTop_toBottomOf="@+id/wheelAccatdPartNumber" />
+
+            <View
+                android:id="@+id/wheelAccviewDivider8"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/atd_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/wheelAccatdPartNumberHint"
+                app:layout_constraintTop_toBottomOf="@+id/wheelAccatdPartNumberHint" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+    <FrameLayout
+        android:id="@+id/forFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <include
+            android:id="@+id/bottomButtons"
+            layout="@layout/product_search_footer"
+            app:flow_verticalAlign="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

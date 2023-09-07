@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/imageView11_garage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ellipse" />
+
+    <ImageView
+        android:id="@+id/imageView12_garage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11_garage"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11_garage"
+        app:layout_constraintStart_toStartOf="@+id/imageView11_garage"
+        app:layout_constraintTop_toTopOf="@+id/imageView11_garage"
+        app:srcCompat="@drawable/logout_icon" />
+
+    <TextView
+        android:id="@+id/tv_menu_item_name_garage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Text"
+        android:textColor="@color/atd_dark_blue"
+        app:layout_constraintStart_toEndOf="@+id/imageView11_garage"
+        app:layout_constraintTop_toTopOf="@+id/imageView11_garage" />
+
+    <ImageView
+        android:id="@+id/imageView13_garage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11_garage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView11_garage"
+        app:srcCompat="@drawable/right_arrow_atd" />
+
+    <TextView
+        android:id="@+id/ellipse_red_garage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="12dp"
+        android:visibility="invisible"
+        android:text=""
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13_garage"
+        app:layout_constraintEnd_toStartOf="@+id/imageView13_garage"
+        app:layout_constraintTop_toTopOf="@+id/imageView13_garage"
+        android:background="@drawable/ellipse_red_my_garage" />
+
+    <TextView
+        android:id="@+id/textView5_garage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/arial"
+        android:text="Text"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_menu_item_name_garage"
+        app:layout_constraintTop_toBottomOf="@+id/tv_menu_item_name_garage" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/lightgreay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5_garage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

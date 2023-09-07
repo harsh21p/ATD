@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clSelectLocation"
+    android:background="@color/screen_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tvLocationNameAndServingDc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/baltic_sea"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivRadio"
+        app:layout_constraintTop_toTopOf="@+id/ivRadio" />
+
+    <TextView
+        android:id="@+id/tvLocationNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/baltic_sea"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvLocationNameAndServingDc"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocationNameAndServingDc" />
+
+    <TextView
+        android:id="@+id/tvLocationAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/dim_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvLocationNumber"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocationNumber" />
+
+    <TextView
+        android:id="@+id/tvCityStateZipcode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/dim_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvLocationAddress"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocationAddress" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/dim_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ivRadio"
+        app:layout_constraintTop_toBottomOf="@+id/tvCityStateZipcode" />
+
+    <ImageView
+        android:id="@+id/ivRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/radio_unselected"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

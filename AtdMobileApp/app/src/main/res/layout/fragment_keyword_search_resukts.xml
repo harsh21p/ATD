@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivFilter"
+        android:layout_marginLeft="10dp"
+        android:layout_marginVertical="10dp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/filter">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ellipse_red_garage_filter"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/ivFilter"
+        app:layout_constraintTop_toTopOf="@+id/ivFilter"
+        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+    <TextView
+        android:id="@+id/tv_approval_numbers_filter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:paddingTop="3dp"
+        android:text="1"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage_filter"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage_filter"
+        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage_filter"
+        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage_filter"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <ImageView
+        android:id="@+id/ivSorting"
+        android:layout_marginVertical="10dp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/ivFilter"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/sort">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ellipse_red_garage"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/ivSorting"
+        app:layout_constraintTop_toTopOf="@+id/ivSorting"
+        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+    <TextView
+        android:id="@+id/tv_approval_numbers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:paddingTop="3dp"
+        android:text="1"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage"
+        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage"
+        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/single_select_box"
+        android:gravity="center"
+        android:layout_marginStart="16dp"
+        android:padding="5dp"
+        android:text="Front"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSorting"
+        app:layout_constraintStart_toEndOf="@+id/ivSorting"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/suspensionValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/suspension_value_box"
+        android:layout_gravity="center_vertical|start"
+        android:gravity="center_vertical|start"
+        android:paddingStart="64dp"
+        android:layout_marginStart="16dp"
+        android:padding="5dp"
+        android:text=""
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSorting"
+        app:layout_constraintStart_toEndOf="@+id/ivSorting"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bothDiameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/suspension_value_box"
+        android:layout_marginStart="16dp"
+        android:padding="5dp"
+        android:text="All Sizes"
+        android:paddingStart="64dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSorting"
+        app:layout_constraintStart_toEndOf="@+id/ivSorting"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/oeSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/single_select_box"
+        android:padding="5dp"
+        android:paddingStart="16dp"
+        android:text="@string/all_sizes"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/position"
+        app:layout_constraintStart_toEndOf="@+id/position"
+        app:layout_constraintTop_toTopOf="@+id/position" />
+    <TextView
+
+        android:layout_marginVertical="10dp"
+        android:id="@+id/ivCVActive"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       app:layout_constraintEnd_toStartOf="@+id/ivCVInactive"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/cv_active">
+
+    </TextView>
+
+
+    <TextView
+        android:visibility="visible"
+        android:layout_marginVertical="10dp"
+        android:id="@+id/ivCVInactive"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/cv_inactive">
+
+    </TextView>
+
+
+
+    <FrameLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vehicleTopList"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivFilter">
+
+        <include
+            android:id="@+id/placeHolderList"
+            layout="@layout/vehicle_result_list_layout" />
+    </FrameLayout>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/clView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toBottomOf="@+id/vehicleTopList">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/collapsScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fitsSystemWindows="true"
+        android:background="@color/white"
+        >
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvNumofResults"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivFilter" />
+
+            <TextView
+                android:id="@+id/tvModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/arial"
+                android:padding="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvNumofResults" />
+
+            <TextView
+                android:id="@+id/tvLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/arial"
+                android:padding="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvModel" />
+
+            <TextView
+                android:id="@+id/tvLocalPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:fontFamily="@font/arial"
+                android:padding="2dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/listLL"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLocal" />
+        </LinearLayout>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvKeyWordResult"
+        android:background="#F5F5F6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constrainedHeight="true"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fillViewport="true"
+        android:paddingBottom="?attr/actionBarSize"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/collapsScreen"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <TextView
+        android:id="@+id/noResultTv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noResWheel"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/noResultTv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/arial"
+        android:visibility="gone"
+        android:text="@string/noResSubLine"
+        android:textColor="@color/dusty_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noResultTv1" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:indeterminateDrawable="@drawable/progress_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </ProgressBar>
+
+    <ImageButton
+       android:layout_marginTop="16dp"
+        android:id="@+id/startNewSearch"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/transparent"
+        android:src="@drawable/start_new_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noResultTv2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

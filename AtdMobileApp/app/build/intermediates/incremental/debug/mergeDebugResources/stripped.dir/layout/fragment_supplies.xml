@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.product.supplies.SuppliesFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/forFooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/suppliestvInst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Dummy"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvsuppliesType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/arial"
+        android:text="@string/supplies_type"
+        android:textColor="@color/dusty_gray"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/suppliestvInst"
+        app:layout_constraintTop_toBottomOf="@+id/suppliestvInst" />
+
+    <TextView
+        android:id="@+id/suppliesType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/arial"
+        android:text="@string/tmps"
+        android:textColor="@color/dusty_gray"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvsuppliesType"
+        app:layout_constraintTop_toBottomOf="@+id/tvsuppliesType"
+        app:layout_constraintEnd_toStartOf="@+id/suppliesDropMenu"/>
+
+    <View
+        android:id="@+id/suppliesviewDivider2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/atd_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/suppliesType"
+        app:layout_constraintTop_toBottomOf="@+id/suppliesType" />
+
+    <ImageView
+        android:id="@+id/suppliesDropMenu"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/arrow_down_blue"
+        app:layout_constraintBottom_toTopOf="@+id/suppliesviewDivider2"
+        app:layout_constraintEnd_toEndOf="@+id/suppliesviewDivider2"
+        app:layout_constraintTop_toTopOf="@+id/suppliesType" />
+
+    <TextView
+        android:id="@+id/suppliesbrands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/arial"
+        android:text="@string/brand"
+        android:textColor="@color/dusty_gray"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/suppliesType"
+        app:layout_constraintTop_toBottomOf="@+id/suppliesviewDivider2" />
+
+    <TextView
+        android:id="@+id/suppliesbrandsHint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/arial"
+        android:text="@string/all"
+        android:textColor="@color/dusty_gray"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/suppliesbrands"
+        app:layout_constraintTop_toBottomOf="@+id/suppliesbrands"
+        app:layout_constraintEnd_toStartOf="@+id/suppliesBrandDropMenu"/>
+
+    <View
+        android:id="@+id/suppliesviewDivider4"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/atd_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/suppliesbrandsHint"
+        app:layout_constraintTop_toBottomOf="@+id/suppliesbrandsHint" />
+
+    <ImageView
+        android:id="@+id/suppliesBrandDropMenu"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/right_arrow"
+        app:tint="@color/atd_blue"
+        app:layout_constraintBottom_toTopOf="@+id/suppliesviewDivider4"
+        app:layout_constraintEnd_toEndOf="@+id/suppliesviewDivider4"
+        app:layout_constraintTop_toTopOf="@+id/suppliesbrandsHint" />
+
+
+    <TextView
+        android:id="@+id/suppliessupplierName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/arial"
+        android:text="@string/supplier_number"
+        android:textColor="@color/dusty_gray"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/suppliesviewDivider4"
+        app:layout_constraintTop_toBottomOf="@+id/suppliesbrandsHint" />
+
+    <EditText
+        android:id="@+id/suppliessupplierHint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/arial"
+        android:textSize="14sp"
+        android:hint="@string/enter_supplier_number"
+        android:background="@android:color/transparent"
+        android:inputType="textVisiblePassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dusty_gray"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/suppliessupplierName"
+        app:layout_constraintTop_toBottomOf="@+id/suppliessupplierName"
+        app:layout_constraintEnd_toEndOf="@+id/suppliesviewDivider7"/>
+
+    <View
+        android:id="@+id/suppliesviewDivider7"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/atd_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/suppliessupplierHint"
+        app:layout_constraintTop_toBottomOf="@+id/suppliessupplierHint" />
+
+    <TextView
+        android:id="@+id/suppliesatdPartNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/arial"
+        android:text="@string/atd_part_number"
+        android:textColor="@color/dusty_gray"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/suppliesviewDivider7"
+        app:layout_constraintTop_toBottomOf="@+id/suppliesviewDivider7" />
+
+    <EditText
+        android:id="@+id/suppliesatdPartNumberHint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/arial"
+        android:textSize="14sp"
+        android:background="@color/transparent"
+        android:inputType="textVisiblePassword"
+        android:hint="@string/enter_part_numbner"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dusty_gray"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/suppliesatdPartNumber"
+        app:layout_constraintTop_toBottomOf="@+id/suppliesatdPartNumber"
+        app:layout_constraintEnd_toEndOf="@+id/suppliesviewDivider8"/>
+
+    <View
+        android:id="@+id/suppliesviewDivider8"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/atd_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/suppliesatdPartNumberHint"
+        app:layout_constraintTop_toBottomOf="@+id/suppliesatdPartNumberHint" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/forFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <include
+            android:id="@+id/bottomButtons"
+            layout="@layout/product_search_footer"
+            app:flow_verticalAlign="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </FrameLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

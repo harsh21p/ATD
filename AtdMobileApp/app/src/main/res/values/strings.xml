@@ -1,0 +1,933 @@
+<resources>
+    <string name="app_name">ATD</string>
+    <string name="_icon_search_description">It is a search icon</string>
+    <string name="_icon_cart_description">It is a cart icon</string>
+    <string name="_icon_text_description">It is a text describing current activity </string>
+    <string name="_icon_ATD_logo_description">It is ATD Logo</string>
+    <string name="dummyText">Dummy Text</string>
+    <string name="shape_rectangle">Its an rectangle shaped line</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="my_lists">My Lists</string>
+    <string name="my_order_approvals">My Order Approvals</string>
+    <string name="my_quotes">My Quotes</string>
+    <string name="quotes_details">Quote Details</string>
+    <string name="my_garage">My Garage</string>
+    <string name="we_ve_listened_to_your_valuable_feedback_and_have_made_some_great_improvements">We’ve listened to your valuable feedback and have made some great improvements!</string>
+    <string name="welcome_to_adtmobile">Welcome to ATDMobile</string>
+    <string name="streamlined_search">Streamlined Search</string>
+    <string name="a_variety_of_ways_to_find_exactly_what_you_re_looking_for_quickly_and_easily">A variety of ways to find exactly what you’re looking for quickly and easily.</string>
+    <string name="license_plate">License Plate</string>
+    <string name="barcode">Barcode</string>
+    <string name="product">Product</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="rebates">Rebates</string>
+    <string name="vin_number">VIN Number</string>
+    <string name="product_delivery">Product Delivery</string>
+    <string name="specify_delivery_options_by_product_to_get_what_you_need_when_you_need_it">Specify delivery options by product to get what you need when you need it.</string>
+    <string name="local_amp_national"><![CDATA[Local & National]]></string>
+    <string name="air">Air</string>
+    <string name="warehouse_pickup">Warehouse Pickup</string>
+    <string name="future_delivery">Future Delivery</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="username">Username</string>
+    <string name="password_case_sensitive">Password (Case Sensitive)</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="enable_face_touch_id">Enable Face/Touch ID</string>
+    <string name="log_in">Log In</string>
+    <string name="txt_resetPassword"><font color="#999999">Forget password?</font> <font color="#0076BE">Reset Password</font></string>
+    <string name="txt_resetPassword_red"><font color="#999999">Forget password?</font> <font color="#FF4438">Reset Password</font></string>
+    <string name="message_success">Success</string>
+    <string name="message_no_support_biometrics">Device not support Biometrics</string>
+    <string name="message_no_hardware_available">No Hardware available</string>
+
+    <string name="error_hw_unavailable">The hardware is unavailable. Try again later.</string>
+    <string name="error_unable_to_process">The sensor was unable to process the current image.</string>
+    <string name="error_time_out">The current operation has been running too long and has timed out.</string>
+    <string name="error_no_space">The operation can\'t be completed because there is not enough device storage remaining.</string>
+    <string name="error_canceled">The operation was canceled by the user or because the biometric sensor is unavailable.</string>
+    <string name="error_lockout">The operation was canceled because the biometrics is locked out due to too many attempts. This occurs after 5 failed attempts, and lasts for 30 seconds.</string>
+    <string name="error_vendor">The operation failed due to a vendor-specific error.</string>
+    <string name="error_lockout_permanent">Wrong biometrics too many times. Use device credential to unlock.</string>
+    <string name="error_user_canceled">Please close the app and open it again to unlock</string>
+    <string name="error_no_biometrics">The Device does not have any biometrics enrolled.</string>
+    <string name="error_hw_not_present">The device does not have the required authentication hardware.</string>
+    <string name="error_no_device_credentials">The device does not have pin, pattern, or password set up.</string>
+    <string name="error_security_update_required">A security vulnerability has been discovered with one or more hardware sensors. The affected sensor(s) are unavailable until a security update has addressed the issue.</string>
+    <string name="error_unknown">Unknown error.</string>
+    <string name="message_user_app_authentication">Denied for Biometrics</string>
+    <string name="text_unlock">Unlock</string>
+    <string name="message_set_up_pattern">Set up PIN/Pattern/Password.</string>
+    <string name="title_device_lock">Device Lock</string>
+    <string name="title_set_up_device_lock">Set up Device lock.</string>
+    <string name="title_biometric_dialog">Biometrics</string>
+    <string name="text_description_biometrics_dialog">Use biometrics to continue.</string>
+    <string name="error_msg">Something went wrong</string>
+    <string name="location">Location</string>
+    <string name="location_number">Location #</string>
+    <string name="select_location">Select Location</string>
+    <string name="search">Search</string>
+    <string name="save_location">Save Location</string>
+    <string name="atdonline">AtdOnline</string>
+    <string name="tireprosmobile">TireProsMobile</string>
+    <string name="choose_your_profile">Choose Your Profile</string>
+    <string name="customer_care_1_800_511_1226">Customer Care (1-800-511-1226)</string>
+    <string name="atdmobile_version">ATDMobile: Version</string>
+    <string name="base_shape_to_hold_icon">base shape to hold icon</string>
+    <string name="icon_of_respective_preference_setting">Icon of respective Preference Setting</string>
+    <string name="icon_for_arrow_right">icon for arrow right</string>
+    <string name="product_search_inst">Please use one or more of the following</string>
+    <string name="product_search_inst_2">categories to narrow your search.</string>
+    <string name="product_category">Product Category</string>
+    <string name="passenger_light">Passenger Light</string>
+    <string name="tire_size">Tire Size</string>
+    <string name="e_g_2256517_or_225_65r17">e.g. 2256517 or 225/65R17</string>
+    <string name="brand">Brand</string>
+    <string name="brands">Brands</string>
+    <string name="all">All</string>
+    <string name="speed_rating">Speed Rating</string>
+    <string name="seasonal_designation">Seasonal Designation</string>
+    <string name="supplier_number">Supplier Number</string>
+    <string name="enter_supplier_number">Enter Supplier Number</string>
+    <string name="atd_part_number">ATD Part Number</string>
+    <string name="enter_part_numbner">Enter Part Number</string>
+    <string name="passenger_light_truck">Passenger/Light Truck</string>
+    <string name="medium_truck">Medium Truck</string>
+    <string name="golf_and_atv">Golf and ATV</string>
+    <string name="trailer">Trailer</string>
+    <string name="farm">Farm</string>
+    <string name="otr_grader_em">OTR, Grader, EM</string>
+    <string name="industrial">Industrial</string>
+    <string name="b_31mph_50kmh">B 31mph/50kmh</string>
+    <string name="c_37mph_60kmh">C 37mph/60kmh</string>
+    <string name="d_40mph_65kmh">D 40mph/65kmh</string>
+    <string name="e_43mph_70kmh">E 43mph/70kmh</string>
+    <string name="f_50mph_80kmh">F 50mph/80kmh</string>
+    <string name="g_56mph_90kmh">G 56mph/90kmh</string>
+    <string name="j_62mph_100kmh">J 62mph/100kmh</string>
+    <string name="k_68mph_110kmh">K 68mph/110kmh</string>
+    <string name="l_75mph_120kmh">L 75mph/120kmh</string>
+    <string name="your_search_returned_0_results">Your search returned 0 results.</string>
+    <string name="please_revise_your_search_terms_and_try_again">Please revise your search terms and try again.</string>
+    <string name="listening">Listening...</string>
+    <string name="searching">Searching...</string>
+    <string name="trayagain">Try Again!!</string>
+    <string name="tap_mic_search">Tap mic to search</string>
+    <string name="logout">You have successfully logged out</string>
+    <string name="ok">OK</string>
+    <string name="clear_all">CLEAR ALL</string>
+    <string name="atd_app_locked">Your ATD app is locked</string>
+    <string name="apply">APPLY</string>
+    <string name="preferred_brands">Preferred Brands</string>
+    <string name="other_brands">Other Brands</string>
+    <string name="expand">expand</string>
+    <string name="collapse">collapse</string>
+    <string name="please_select_brand">Please select Brands</string>
+    <string name="m_81mph_130kmh">M 81mph/130kmh</string>
+    <string name="n_87mph_140kmh">N 87mph/140kmh</string>
+    <string name="p_93mph_150kmh">P 93mph/150kmh</string>
+    <string name="q_99mph_160kmh">Q 99mph/160kmh</string>
+    <string name="r_106mph_170kmh">R 106mph/170kmh</string>
+    <string name="s112mph_180kmh">S 112mph/180kmh</string>
+    <string name="t_118mph_190kmh">T 118mph/190kmh</string>
+    <string name="u_124mph_200kmh">U 124mph/200kmh</string>
+    <string name="h_130mph_210kmh">H 130mph/210kmh</string>
+    <string name="v_149mph_240kmh">V 149mph/240kmh</string>
+    <string name="w_168mph_270kmh">W 168mph/270kmh</string>
+    <string name="y_186mph_300kmh">Y 186mph/300kmh</string>
+    <string name="y_186_mph_300_kmh">(Y) 186+mph/300+kmh</string>
+    <string name="winter">Winter</string>
+    <string name="_3peak_mt_snowflake">3Peak Mt. Snowflake</string>
+    <string name="all_other">All Other</string>
+    <string name="tire_types">Tire Types</string>
+    <string name="speed">Speed</string>
+    <string name="wheels">Wheels</string>
+    <string name="tires">Tires</string>
+    <string name="wheel">Wheel</string>
+    <string name="acc">Accessories</string>
+    <string name="supplies">Supplies</string>
+    <string name="tube"><![CDATA[Tubes &]]></string>
+    <string name="flaps">Flaps</string>
+    <string name="tire_repair">Tire Repair</string>
+    <string name="tools">Tools</string>
+    <string name="medium_truck_tires">medium truck tires</string>
+    <string name="comma">\", \"</string>
+    <string name="more">"\ More\</string>
+    <string name="plus">+</string>
+
+    <string name="title">Title</string>
+    <string name="this_is_message">This is Message</string>
+
+
+    <string name="wheel_type">Wheel Type</string>
+    <string name="custom_wheel">Custom Wheels</string>
+    <string name="custom_wheel_lower">custom wheels</string>
+
+    <string name="diameter">Diameter</string>
+    <string name="width">Width</string>
+    <string name="lug_bolt_circle">Lugs/Bolt Circle</string>
+    <string name="finish">Finish</string>
+    <string name="offset_description">Offset Description</string>
+    <string name="keyword_search">Keyword Search</string>
+    <string name="vin_search">VIN Search</string>
+    <string name="product_search_hint">Please use one or more of the following categories to narrow your search.</string>
+
+    <string name="noResWheel">There are no search results\n found</string>
+    <string name="noResTpms">There are no search results\nmatching your criteria</string>
+    <string name="noResSubLine">Please revise your criteria to search again</string>
+
+    <string-array name="frequencyList">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Quarterly</item>
+        <item>Annually</item>
+    </string-array>
+
+    <string-array name="wheelType">
+        <item>Custom Wheels</item>
+        <item>AG Wheels</item>
+        <item>Steel Wheels</item>
+    </string-array>
+
+    <string-array name="diameter">
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>16.5</item>
+        <item>17</item>
+        <item>17.5</item>
+        <item>18</item>
+        <item>19</item>
+        <item>19.5</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>22.5</item>
+        <item>24</item>
+        <item>24.5</item>
+        <item>26</item>
+        <item>28</item>
+    </string-array>
+
+    <string-array name="wheel_width">
+        <item>2.5</item>
+        <item>3.75</item>
+        <item>4</item>
+        <item>4.5</item>
+        <item>5</item>
+        <item>5.375</item>
+        <item>5.5</item>
+        <item>6</item>
+        <item>6.5</item>
+        <item>6.75</item>
+        <item>7</item>
+        <item>7.5</item>
+        <item>8</item>
+        <item>8.25</item>
+        <item>8.5</item>
+        <item>9</item>
+        <item>9.25</item>
+        <item>9.5</item>
+        <item>9.75</item>
+        <item>10</item>
+        <item>11</item>
+        <item>11.5</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
+
+    <string-array name="lugsbolts">
+        <item>All</item>
+        <item>4x100</item>
+        <item>4x101.6</item>
+        <item>4x108</item>
+        <item>4x110</item>
+        <item>4x115</item>
+        <item>4x130</item>
+        <item>4x136</item>
+        <item>4x136.5</item>
+        <item>4x137</item>
+        <item>4x156</item>
+        <item>4x4.00</item>
+        <item>4x4.25</item>
+        <item>4x4.50</item>
+        <item>4x98</item>
+        <item>5x100</item>
+        <item>5x102</item>
+        <item>5x105</item>
+        <item>5x108</item>
+        <item>5x110</item>
+        <item>5x112</item>
+        <item>5x114</item>
+        <item>5x114.3</item>
+        <item>5x115</item>
+        <item>5x120</item>
+        <item>5x120.65</item>
+        <item>5x121</item>
+        <item>5x127</item>
+        <item>5x128</item>
+        <item>5x130</item>
+        <item>5x135</item>
+        <item>5x150</item>
+        <item>5x205</item>
+        <item>5x4.00</item>
+        <item>5x4.25</item>
+        <item>5x4.50</item>
+        <item>5x4.75</item>
+        <item>5x5</item>
+        <item>5x5.0</item>
+        <item>5x5.5</item>
+        <item>5x98</item>
+        <item>6x115</item>
+        <item>6x120</item>
+        <item>6x132</item>
+        <item>6x135</item>
+        <item>6x5.00</item>
+        <item>6x5.50</item>
+        <item>6x6.00</item>
+        <item>6x6.50</item>
+        <item>7x150</item>
+        <item>8x0.00</item>
+        <item>8x170</item>
+        <item>8x180</item>
+        <item>8x200</item>
+        <item>8x210</item>
+        <item>8x5.50</item>
+        <item>8x6.50</item>
+        <item>10x222.35</item>
+        <item>10x225</item>
+        <item>10x285</item>
+        <item>10x285.75</item>
+
+    </string-array>
+
+    <string-array name="finish">
+        <item>ATD Finish</item>
+        <item>Anthracite</item>
+        <item>Black</item>
+        <item>Blue</item>
+        <item>Bronze</item>
+        <item>Chrome</item>
+        <item>Galvanized</item>
+        <item>Gold</item>
+        <item>Green</item>
+        <item>Machined Finished</item>
+        <item>Opal</item>
+        <item>Orange</item>
+        <item>Polished</item>
+        <item>Red</item>
+        <item>Silver</item>
+        <item>Two-Tone White</item>
+    </string-array>
+
+    <string-array name="offsetDescription">
+        <item>All</item>
+        <item>STD</item>
+        <item>REV</item>
+        <item>MED</item>
+        <item>HPO</item>
+    </string-array>
+
+    <string-array name="seasonalDesignation">
+        <item>All</item>
+        <item>Winter</item>
+        <item>3Peak Mt.Snowflake</item>
+    </string-array>
+
+
+    <string name="wheel_accessories_type">Wheel Accessories Type</string>
+    <string name="caps">Caps</string>
+    <string name="please_use">Please use one or more of the following\ncategories to narrow your search.</string>
+    <string name="hubcentric_rings">Hubcentric Rings</string>
+    <string name="hub_cover_locks">Hub Cover Locks</string>
+    <string name="install_kits">Install Kits</string>
+    <string name="lug_bolts">Lug Bolts</string>
+    <string name="lug_nuts">Lug Nuts</string>
+    <string name="tools_and_sockets">Tools and Sockets</string>
+    <string name="wheel_studs">Wheel Studs</string>
+    <string name="accessory_types">Accessory Types</string>
+    <string name="capsUpper">Caps</string>
+    <string name="capsLower">caps</string>
+    <string name="hubcentricRings">Hubcentric Rings</string>
+    <string name="hubcentricRingsLower">hubrings</string>
+    <string name="hubCoverLocks">Hub Cover Locks</string>
+    <string name="hubCoverLocksLower">hubcovers</string>
+    <string name="installKits">Install Kits</string>
+    <string name="installKitsLower">installkits</string>
+    <string name="lugBolts">Lug Bolts</string>
+    <string name="lugBoltsLower">lugbolts</string>
+    <string name="lugNuts">Lug Nuts</string>
+    <string name="lugNutsLower">lugnuts</string>
+    <string name="toolsAndSockets">Tools And Sockets</string>
+    <string name="toolsAndSocketsLower">tools</string>
+    <string name="wheelStuds">Wheel Studs</string>
+    <string name="wheelStudsLower">wheelstuds</string>
+    <string name="wheel_accessories">wheel accessories</string>
+    <string name="lightTruckTires">light truck tires</string>
+    <string name="supplies_type">Supplies Type</string>
+    <string name="tmps">TMPS</string>
+    <string name="tmps_lower">tmps</string>
+    <string name="wheel_weights">Wheel Weights</string>
+    <string name="wheel_weights_lower">wheelweights</string>
+    <string name="supplies_lower">supplies</string>
+    <string name="both">Both</string>
+    <string name="tubes">Tubes</string>
+    <string name="tubesAndFlaps">tubes and flaps</string>
+    <string name="addtoquote">Add to Quote</string>
+    <string name="viewmarketingprograms">View Marketing Programs</string>
+    <string name="viewrebates">View Rebates</string>
+    <string name="addtolist">Add To List</string>
+    <string name="retailprice">Retail Price</string>
+    <string name="product_successfully_added_to_your_cart">Product successfully added to your cart.</string>
+    <string name="continue_shoping">Continue Shopping</string>
+    <string name="checkout_now">Checkout Now</string>
+
+    <string-array name="Dimensions">
+        <item>Tire Width</item>
+        <item>Aspect Ratio</item>
+        <item>Tire Diameter</item>
+        <item>Overall Tire Diameter</item>
+        <item>Outer Diameter</item>
+        <item>Tire Wheel Size</item>
+        <item>Rim Diameter</item>
+        <item>Minimum Rim Width</item>
+        <item>Maximum Rim Width</item>
+        <item>Product Width</item>
+        <item>Product Length</item>
+        <item>Product Height</item>
+        <item>Wheel Diameter</item>
+        <item>Lip Width</item>
+        <item>Wheel Width</item>
+        <item>Model Number</item>
+
+    </string-array>
+
+    <string-array name="Performance">
+        <item>UTQG</item>
+        <item>Sidewall</item>
+        <item>Speed Rating</item>
+        <item>Tire Ply</item>
+        <item>Temperature Rating</item>
+        <item>Treadwear</item>
+        <item>Maximum Speed</item>
+        <item>Mileage Warranty</item>
+        <item>Warranty</item>
+        <item>Load Rating (lbs)</item>
+
+    </string-array>
+
+    <string-array name="Precision">
+        <item>Tread Depth</item>
+        <item>Radial Bias</item>
+        <item>Asymmetrical</item>
+        <item>Directional</item>
+    </string-array>
+
+    <string-array name="Safety">
+        <item>Tread Depth</item>
+        <item>Load Index</item>
+        <item>Load Range</item>
+        <item>Load Rating</item>
+        <item>Traction Rating</item>
+        <item>RPM</item>
+        <item>Maximum Tire Pressure</item>
+        <item>Speed Maximum Tire Pressure</item>
+        <item>Run Flat</item>
+        <item>Single Maximum Load (lbs)</item>
+        <item>Dual Maximum Load (lbs)</item>
+        <item>>Tubeless?</item>
+    </string-array>
+
+    <string-array name="Weather">
+        <item>Seasonal Designation</item>
+        <item>Winter Designation</item>
+        <item>Winter Stud Size</item>
+    </string-array>
+
+
+    <string-array name="ProductInformation">
+        <item>Style</item>
+        <item>Item Sub-Group</item>
+        <item>Shipping Weight</item>
+        <item>Assembly</item>
+        <item>UPC</item>
+        <item>MAP</item>
+        <item>MSRP</item>
+        <item>OE Markings</item>
+        <item>Set Code</item>
+        <item>Set Flap</item>
+        <item>Set Tubes and Flaps</item>
+        <item>Smart Way Designation</item>
+        <item>Country of Origin</item>
+        <item>Staggered</item>
+        <item>Replacement Part Number</item>
+        <item>Special Notes</item>
+        <item>Bolt Pattern</item>
+        <item>Finish</item>
+        <item>Height</item>
+        <item>Inside Diameter</item>
+        <item>Outside Diameter</item>
+        <item>Install Method</item>
+        <item>Cap Type</item>
+        <item>End Type</item>
+        <item>Material</item>
+        <item>Lock Thread Length</item>
+        <item>Lock Thread Pitch</item>
+        <item>Inside Diameter</item>
+        <item>Outside Diameter</item>
+        <item>Inside Diameter (from Vendor)</item>
+        <item>Outside Diameter (from Vendor)</item>
+        <item>Type</item>
+        <item>Color</item>
+        <item>Overall Length</item>
+        <item>Pitch</item>
+        <item>Key - Part Number</item>
+        <item>Key - Quantity</item>
+        <item>Lock - Part Number</item>
+        <item>Lock - Quantity</item>
+        <item>Lug - Part Number</item>
+        <item>Lug - Quantity</item>
+        <item>Socket - Part Number</item>
+        <item>Socket - Quantity</item>
+        <item>Thread Length</item>
+        <item>Thread Pitch</item>
+        <item>Value Stem Temp - Part Number</item>
+        <item>Value Stem Temp - Quantity</item>
+        <item>Washer - Part Number</item>
+        <item>Washer - Quantity</item>
+        <item>Overall Length</item>
+        <item>Outside Diameter</item>
+        <item>Drive Gender</item>
+        <item>Drive Size</item>
+        <item>Dirve Type</item>
+        <item>Seat Angle</item>
+        <item>Seat Type</item>
+        <item>Threaded Length</item>
+        <item>Thread Pitch</item>
+        <item>Lug Nut Type</item>
+        <item>Outside Diameter</item>
+        <item>Overall Length</item>
+        <item>Ball Diameter</item>
+        <item>Drive Type</item>
+        <item>Drive Size</item>
+        <item>Duplex</item>
+        <item>Pitch Direction</item>
+        <item>Seat Angle</item>
+        <item>Seat Type</item>
+        <item>Send Type</item>
+        <item>Shank Diameter</item>
+        <item>Shank Length</item>
+        <item>Splines</item>
+        <item>Thread Pitch</item>
+        <item>Color</item>
+        <item>Male End</item>
+        <item>Female End</item>
+        <item>Type</item>
+        <item>Total Height</item>
+        <item>Outside Diameter</item>
+        <item>Stepped Inside</item>
+        <item>Stepped Outside</item>
+        <item>Type</item>
+        <item>Overall Length</item>
+        <item>Hub Tread Length</item>
+        <item>Wheel Thread Pitch</item>
+        <item>Side Thread Length</item>
+        <item>Valve Type</item>
+        <item>Mount Type</item>
+        <item>Mount Location</item>
+        <item>Hole Diameter</item>
+        <item>Stem Angle</item>
+        <item>Effective Length</item>
+        <item>High Pressure</item>
+        <item>Material</item>
+        <item>Type</item>
+        <item>Lug Bore</item>
+        <item>Color</item>
+        <item>Kit Color</item>
+        <item>Units of Measure</item>
+        <item>Universal Sensor</item>
+        <item>OE Supplier</item>
+        <item>Vehicle Origin</item>
+        <item>Material</item>
+        <item>Type</item>
+        <item>Color</item>
+        <item>Material</item>
+        <item>Diameter</item>
+        <item>Diameter</item>
+        <item>Diameter</item>
+        <item>Valve</item>
+        <item>Tire Type</item>
+        <item>Diameter</item>
+        <item>Rim Size</item>
+        <item>Color</item>
+        <item>Ply</item>
+        <item>Range</item>
+        <item>Maximum RPM</item>
+        <item>Shape</item>
+        <item>Bias/Radial</item>
+        <item>Bias Tire?</item>
+        <item>Radial Tire?</item>
+        <item>Arbor Hole</item>
+        <item>Blade Length</item>
+        <item>Shaft Size</item>
+        <item>Grit</item>
+        <item>Thread Size</item>
+        <item>Unit of Measurement</item>
+        <item>Shelf Life</item>
+        <item>Length</item>
+        <item>Output Size</item>
+        <item>Drive Size</item>
+        <item>Air Consumption</item>
+        <item>Air Requirements</item>
+        <item>Maximum Torque</item>
+        <item>Minimum Hose Size</item>
+        <item>Sea Metric</item>
+        <item>Model Number</item>
+
+    </string-array>
+    <string name="year">Year</string>
+    <string name="choose_year">Choose Year</string>
+    <string name="make">Make</string>
+    <string name="choose_make">Choose Make</string>
+    <string name="model">Model</string>
+    <string name="choose_model">Choose Model</string>
+    <string name="trim">Trim</string>
+    <string name="choose_trim">Choose Trim</string>
+    <string name="oe_size">OE Size</string>
+    <string name="choose_an_option">Choose an option</string>
+    <string name="search_button">Search Button</string>
+    <string name="tpms">TPMS</string>
+    <string name="suspension">Suspension</string>
+    <string name="value_99">99+</string>
+    <string name="fet_text">$%s FET</string>
+    <string name="result_text">%s Results</string>
+    <string name="map_text">$%s MAP</string>
+    <string name="cost_text">$%s Cost</string>
+    <string name="bolt_pattern">Bolt Pattern</string>
+    <string name="diameter_selection">Diameter Selection</string>
+    <string name="front">Front</string>
+    <string name="rear">Rear</string>
+    <string name="searchpo_or_confirmation">Search PO or Confirmation #</string>
+    <string name="noorders">You have no orders</string>
+    <string name="last7days">Last 7 Days</string>
+    <string name="last30days">Last 30 Days</string>
+    <string name="last90days">Last 90 Days</string>
+    <string name="daterange">Date Range</string>
+    <string name="my_orders">My Orders</string>
+    <string name="start_date">Start Date</string>
+    <string name="notification">Notification Permission</string>
+    <string name="notification_permission">Notification permission is required, Please allow notification permission from setting</string>
+    <string name="okay">Ok</string>
+    <string name="all_sizes">All Sizes</string>
+    <string name="suspension_selection">Suspension Selection</string>
+    <string name="your_cart_is_empty">Your cart is empty</string>
+    <string name="there_are_no_items_in_your_cart_start_adding_products">There are no items in your cart. Start \nadding products.</string>
+    <string name="edit_quantity_delivery_options"><![CDATA[EDIT QUANTITY & DELIVERY OPTIONS]]></string>
+    <string name="cart">Cart</string>
+    <string name="no_returns">No Returns</string>
+    <string name="item_subtotal">Item Subtotal:</string>
+    <string name="cost">Cost:</string>
+    <string name="remove_product">Remove Product</string>
+    <string name="are_you_sure_want_to_remove_this_product_from_your_cart">Are you sure want to remove this product \nfrom your cart?</string>
+
+    <string name="order_details">Order Details</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="freight">Freight</string>
+    <string name="total">Total</string>
+    <string name="returns">Return</string>
+    <string name="qty">Qty</string>
+    <string name="deliverydate">Delivery Date</string>
+    <string name="method">Method</string>
+    <string name="supplier">Supplier #:</string>
+    <string name="dc">DC #</string>
+    <string name="freight_charges">Freight Charges</string>
+    <string name="order_again">ORDER AGAIN</string>
+    <string name="print_order">PRINT ORDER</string>
+    <string name="sort">Sort</string>
+    <string name="shop_for_products">Shop for products</string>
+    <string name="approvals">Approvals</string>
+    <string name="pending_approvals">Pending Approvals</string>
+    <string name="select_all">Select All</string>
+    <string name="di_select_all">Deselect All</string>
+    <string name="yesterday">yesterday</string>
+    <string name="reject">REJECT</string>
+    <string name="approve">APPROVE</string>
+
+    <string name="filter">Filter</string>
+    <string name="availability">Availability</string>
+    <string name="size">Size</string>
+    <string name="style">Style</string>
+    <string name="mileage_warranty">Mileage Warranty</string>
+    <string name="run_flat">Run Flat</string>
+    <string name="marketing_programs">Marketing Programs</string>
+    <string name="wheel_diameter">Wheel Diameter</string>
+    <string name="wheel_width">Wheel Width</string>
+    <string name="atd_finish">ATD Finish</string>
+    <string name="quantity_delivery"><![CDATA[Quantity & Delivery]]></string>
+    <string name="save">Save</string>
+    <string name="quantity">Quantity:</string>
+    <string name="national">NATIONAL</string>
+    <string name="delivery">Delivery</string>
+    <string name="standard_deliver">Standard Delivery </string>
+    <string name="customer_pickup_free">Customer Pickup (Free)</string>
+    <string name="choosefuturedeliveryday">Choose Future Delivery Day</string>
+    <string name="xpress_delivery_15_per_4_units">Xpress Delivery ($15 per 4 Units)</string>
+    <string name="choose_future_delivery_window_free">Choose Future Delivery Window (Free)</string>
+    <string name="local_local">LOCAL/LOCAL +</string>
+    <string name="_3rd_party_ground">3rd Party Ground</string>
+    <string name="one_day_air_764_61">One-Day Air (+$764.61)</string>
+    <string name="two_day_air_523_61">Two-Day Air (+$523.61)</string>
+    <string name="backorder">BackOrder</string>
+    <string name="back_order">BACK ORDER</string>
+    <string name="local_local_fulfillment_when_available">Local/Local+ fulfillment when available</string>
+    <string name="please_contact_your_location_for_more_details_on_back_ordered_items">Please contact your location for more details on back ordered items.</string>
+    <string name="displayed_in_cart">Displayed in cart</string>
+    <string name="item_freight">Item Freight</string>
+    <string name="does_not_include_fet">* - does not include FET</string>
+    <string name="estimated_delivery_date">Estimated Delivery Date</string>
+    <string name="delivery_date">Delivery Date</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="confirm_changes">Do you want to keep the changes that \nyou made?</string>
+    <string name="pricing">PRICING</string>
+    <string name="show_product_cost">Show Product Cost</string>
+    <string name="notifications">Notifications</string>
+    <string name="order_cutoff">Order Cutoff</string>
+    <string name="start_of_business_day">Start Of Business Day</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_of_business_day">End of Business Day</string>
+    <string name="end_time">End Time</string>
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="search_results">SEARCH RESULTS</string>
+    <string name="fitment_results_default">Fitment Results (Default)</string>
+    <string name="my_brands_default">My Brands (Default)</string>
+    <string name="availability_filter_default">Availability Filter (Default)</string>
+    <string name="sort_order_default">Sort Order (Default)</string>
+    <string name="add_to_cart_retail_quote">Add To Cart/Retail Quote</string>
+    <string name="reset_all">Reset All</string>
+    <string name="show_all_brands">Show All Brands</string>
+    <string name="local">Local +</string>
+    <string name="availability_cost_high_to_low">Availability/Cost High To Low</string>
+    <string name="preferences">Preferences</string>
+    <string name="fitment">Fitment</string>
+    <string name="preferences_dis">Would you like to save your preferences?</string>
+    <string name="checkout">Checkout</string>
+    <string name="consumer_name_optional">Consumer Name (Optional)</string>
+    <string name="please_enter_a_consumer_name">Please enter a consumer name</string>
+    <string name="po_number">PO Number</string>
+    <string name="please_enter_a_valid_po_number">Please enter a valid PO number</string>
+    <string name="add_comments">Add Comments</string>
+    <string name="comments_optional">Comments (Optional)</string>
+    <string name="please_contact_the_dc_directly_for_all_order_comments">Please contact the DC directly for all order comments that \nrequire immediate attention.</string>
+    <string name="freight_msg">I agree to pay the freight charges as shown above, including \napplicable box and handling charges. These charges are \nnon-refundable in the event of a return, and will appear on \nyour invoice for this order.</string>
+    <string name="subtotal_fees_services"><![CDATA[Subtotal Fees & Services]]></string>
+    <string name="item_quantity">Item Quantity</string>
+    <string name="place_order">PLACE ORDER</string>
+    <string name="order_submitted_for_approval">Order Submitted for \nApproval</string>
+    <string name="order_complete">Order Complete</string>
+    <string name="your_order_will_appear_in_my_orders_momentarily">Your order will appear in My Orders momentarily.</string>
+    <string name="your_order_will_appear_shortly">Thank you for your purchase! Your order should appear in My Orders momentarily.</string>
+    <string name="view_order">VIEW ORDER</string>
+    <string name="save_order_to_a_list">SAVE ORDER TO A LIST</string>
+    <string name="i_agree_to_pay_the_freight_charges">I agree to pay the freight charges</string>
+    <string name="vin">VIN</string>
+    <string name="et_barcode">Enter Barcode Number</string>
+    <string name="barcode_number">Barcode Number</string>
+    <string name="barcode_search">Barcode Search</string>
+    <string-array name="Fitment">
+        <item>Bolt Pattern</item>
+        <item>Bolt Circle</item>
+        <item>Wheel Bolt Circle</item>
+        <item>Offset</item>
+        <item>Offset Description</item>
+        <item>Backspacing</item>
+    </string-array>
+
+    <string-array name="Finish">
+        <item>ATD Finish</item>
+        <item>Manufacturer Finish</item>
+        <item>Material</item>
+    </string-array>
+
+    <string-array name="WheelHub">
+        <item>Hub Bore</item>
+        <item>Hub Centric</item>
+        <item>Hub Centric Ring Included</item>
+    </string-array>
+
+    <string-array name="Lugs">
+        <item># of Lug Holes</item>
+        <item>Lug Nut Type</item>
+        <item>Wheel Lugs</item>
+    </string-array>
+
+    <string-array name="size">
+        <item>size</item>
+    </string-array>
+
+    <string-array name="sortOptions">
+        <item>Availability</item>
+        <item>Availability, Cost Low to High</item>
+        <item>Availability, Cost High to Low</item>
+        <item>Availability, Retail Low to High</item>
+        <item>Availability, Retail High to Low</item>
+        <item>Brand</item>
+        <item>Cost Low to High</item>
+        <item>Cost High to Low</item>
+        <item>Preferred Brands</item>
+        <item>Preferred Brands/Availability/Cost Low to High</item>
+        <item>Preferred Brands/Availability/Cost High to Low</item>
+        <item>Retail Low to High</item>
+        <item>Retail High to Low</item>
+    </string-array>
+
+    <string name="local_cut_off">Local cut-off time within an hour</string>
+    <string name="local_plus_cut_off">Local+ cut-off time within an hour</string>
+    <string name="order_now">Order Now!</string>
+    <string name="end_of_day">End of business day approaching</string>
+
+
+    <string name="filter_text">%s</string>
+    <string name="et_licence_plate">Enter License Plate Number</string>
+    <string name="state">State</string>
+    <string name="choose_state">Choose State</string>
+    <string name="license_plate_search">License Plate Search</string>
+    <string name="front_tire_size">Front Tire Size</string>
+    <string name="ft_eg">e.g. 2256517 or 225/65R17</string>
+    <string name="rear_tire_size_optional">Rear Tire Size(Optional)</string>
+    <string name="rebate_search">Rebate Search</string>
+    <string name="username_is_incorrect">Username is incorrect</string>
+    <string name="password_is_incorrect">Password is incorrect</string>
+    <string name="close">Close</string>
+    <string name="viewOnAspire">View on Aspire</string>
+    <string name="end_date">End Date</string>
+    <string name="search_within_90days">You can only search orders placed within 90 days.Contact support if you need further assistance.</string>
+    <string name="customer_pickup_must_apply_to_all_item_s_in_your_cart">Customer Pickup must apply to all item(s) in your cart.</string>
+    <string name="future_delivery_must_apply_to_all_item_s_in_your_cart">Future Delivery must apply to all item(s) in your cart.</string>
+    <string name="local_and_national_delivery_items_are_not_eligible_for_customer_pickup_and_will_be_removed_from_your_cart">Local+ and National delivery items are not eligible for Customer Pickup and \nwill be removed from your cart.</string>
+    <string name="national_delivery_items_are_not_eligible_for_future_and_will_be_removed_from_your_cart"> National delivery items are not eligible for Future Delivery and \nwill be removed from your cart.</string>
+    <string name="local_and_national_delivery_items_are_not_eligible_for_customer_pickup">Local+ and National delivery items are not \neligible for Customer Pickup</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes_remove_item_s_and_select_customer_pickup">Yes, remove item(s) and \nselect Customer Pickup</string>
+    <string name="yes_remove_item_s_and_select_future_delivery">Yes, remove item(s) and \nSelect Future Delivery</string>
+    <string name="create_list">Create List</string>
+    <string name="create_a_list">Create A List</string>
+    <string name="listName">List Name</string>
+    <string name="et_listName">Enter List Name</string>
+    <string name="share_list_with_location">Share List With Location?</string>
+    <string name="yes_read_only">  Yes, Read Only</string>
+    <string name="yes_editable">  Yes, Editable</string>
+    <string name="no">  No</string>
+    <string name="yes">  Yes</string>
+    <string name="reoccuring_order">Reoccuring Order?</string>
+    <string name="next_order_date">Next Order Date</string>
+    <string name="mm_dd_yyyy">MM/DD/YYYY</string>
+    <string name="frequency">Frequency</string>
+    <string name="you_have_no_list">You have no lists.</string>
+    <string name="list_details">List Details</string>
+    <string name="list_actions">List Actions</string>
+    <string name="add_to_list">Add to List</string>
+    <string name="atd_product_number">ATD Product Number</string>
+    <string name="add">ADD</string>
+    <string name="remove">REMOVE</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="add_item_des">To add items to this list, enter an ATD Product Number or scan a barcode.</string>
+    <string name="your_list_is_empty">Your List is Empty</string>
+    <string name="edit_list">Edit List</string>
+    <string name="delete_list">Delete List</string>
+    <string name="email_list">Email List</string>
+    <string name="print_list">Print List</string>
+    <string name="rename_list">Rename List</string>
+    <string name="return_to_search">Return to Search</string>
+    <string name="search_quotes">Search Quotes</string>
+    <string name="you_have_no_quotes">You have no quotes</string>
+    <string name="quotes_search_numbers">%s results</string>
+    <string name="status">Status</string>
+    <string name="last_modified">Last Modified</string>
+    <string name="none">None</string>
+    <string name="last_24_hours">Last 24 Hours</string>
+    <string name="last_7_days">Last 7 Days</string>
+    <string name="last_30_days">Last 30 Days</string>
+    <string name="specify_date_range">Specify Date Range</string>
+    <string name="select">Select</string>
+    <string name="_1">1</string>
+    <string name="edit_delivery_date">Edit Delivery Date</string>
+    <string name="delivery_day">Delivery Day</string>
+    <string name="delivery_window">Delivery Window</string>
+    <string name="select_date"><![CDATA[Select Date >]]></string>
+    <string name="future_delivery_day_allow">Future Delivery day allows you to have all products \ndelivered together on the date chosen</string>
+    <string name="once_a_date_is_selected">Once a date is selected, a range will be highlighted \nshowing all days your items may be delivered.</string>
+    <string name="atoz">  A to Z</string>
+    <string name="ztoa">  Z to A</string>
+    <string name="hightTolow">  High to Low</string>
+    <string name="lowToHigh">  Low to High</string>
+    <string name="total_items">Total Items</string>
+    <string name="sort_by">Sort By</string>
+    <string name="quote_actions">Quote Actions</string>
+    <string name="quote">Quote #:</string>
+    <string name="quoted_by">Quoted By:</string>
+    <string name="products">Products</string>
+    <string name="customer_info">Customer Info</string>
+    <string name="quote_fees_services"><![CDATA[Quote Fees & Services]]></string>
+    <string name="retail_cost">Retail Cost</string>
+    <string name="email_text">Email Text</string>
+    <string name="view_previous_comments_1">View Previous Comments (1)</string>
+    <string name="qty_4">QTY 4</string>
+    <string name="_12_00">$12.00</string>
+    <string name="item_fees_services"><![CDATA[Item Fees & Services]]></string>
+    <string name="first_name_required">First Name (Required)</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="please_enter_a_valid_first_name">ⓘ Please enter a valid first name</string>
+    <string name="last_name_required">Last Name (Required)</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="please_enter_a_valid_last_name">ⓘ Please enter a valid last name</string>
+    <string name="email_required">Email (Required)</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="phone_required">Phone (Required)</string>
+    <string name="enter_phone">Enter Phone</string>
+    <string name="street_address">Street Address</string>
+    <string name="enter_street_address">Enter Street Address</string>
+    <string name="apt_suite">Apt, Suite</string>
+    <string name="enter_apt_suite">Enter Apt, Suite</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="enter_zip_code">Enter Zip Code</string>
+    <string name="city">City</string>
+    <string name="enter_city">Enter City</string>
+    <string name="enter_state">Enter State</string>
+    <string name="commented_by">Commented by:</string>
+    <string name="email_quote">Email Quote</string>
+    <string name="delete_quote">Delete Quote</string>
+    <string name="print_quote">Print Quote</string>
+    <string name="working">Working</string>
+    <string name="add_more_prods">Add More Products</string>
+    <string name="go_to_quotes">Go To Quote</string>
+    <string name="product_added">Product has been added to your quote</string>
+    <string name="save_failed">Saving Failed</string>
+    <string name="quantity_q">Quantity :</string>
+    <string name="product_group">Product Group</string>
+    <string name="quote_saved">Quote Saved</string>
+    <string name="your_quote_has_been_saved_successfully">Your Quote has been saved successfully</string>
+    <string name="success_quotes">Success</string>
+    <string name="mail_sent">Mail sent successfully</string>
+    <string name="email_qupte">Email Quote</string>
+    <string name="are_you_sure_want_to_delete_this_quote_please_enter_the_reason_for_deleting">Are you sure want to delete this quote? Please enter\nthe reason for deleting.</string>
+    <string name="reason_description_required">Reason Description (required)</string>
+    <string name="other_reasons">Other Reasons</string>
+    <string name="success_quote_delete">Quote has been deleted successfully</string>
+    <string name="for_ci_cd_trial">for cicd trialejkfdfks </string>
+</resources>

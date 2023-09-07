@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F6"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tires"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tires"
+        android:textColor="@color/atd_blue"
+        android:padding="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="16sp"/>
+
+
+    <TextView
+        android:id="@+id/wheels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wheels"
+        android:textColor="@color/dusty_gray"
+        android:padding="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="16sp"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:id="@+id/tpms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tpms"
+        android:textColor="@color/dusty_gray"
+        android:padding="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="16sp"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:id="@+id/suspension"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/suspension"
+        android:textColor="@color/dusty_gray"
+        android:padding="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="16sp"
+        android:layout_marginStart="5dp"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

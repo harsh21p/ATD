@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="16dp"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/tSun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sun"
+        android:layout_margin="1dp"
+        android:padding="10dp"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/atd_blue"
+        android:tag="unselected"
+        android:background="@drawable/border_for_textview"/>
+
+    <TextView
+        android:id="@+id/tvMon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mon"
+        android:padding="10dp"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/atd_blue"
+        android:tag="unselected"
+        android:background="@drawable/border_for_textview"/>
+
+    <TextView
+        android:id="@+id/tvTue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tue"
+        android:layout_margin="1dp"
+        android:padding="10dp"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/atd_blue"
+        android:tag="unselected"
+        android:background="@drawable/border_for_textview"/>
+
+    <TextView
+        android:id="@+id/tvWed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wed"
+        android:padding="10dp"
+
+        android:fontFamily="@font/arial"
+        android:textColor="@color/atd_blue"
+        android:tag="unselected"
+        android:background="@drawable/border_for_textview"/>
+
+    <TextView
+        android:id="@+id/tvThu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thu"
+        android:padding="10dp"
+        android:fontFamily="@font/arial"
+        android:layout_margin="1dp"
+        android:textColor="@color/atd_blue"
+        android:tag="unselected"
+        android:background="@drawable/border_for_textview"/>
+
+    <TextView
+        android:id="@+id/tvFri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fri"
+        android:padding="10dp"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/atd_blue"
+        android:tag="unselected"
+        android:background="@drawable/border_for_textview"/>
+
+    <TextView
+        android:id="@+id/tvSat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sat"
+        android:padding="10dp"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/atd_blue"
+        android:layout_margin="1dp"
+        android:tag="unselected"
+        android:background="@drawable/border_for_textview"/>
+</LinearLayout>

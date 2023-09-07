@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/viewMain"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<TextView
+    android:id="@+id/item"
+    android:layout_width="0dp"
+    android:padding="5dp"
+    android:text="Rim Diameter"
+    android:fontFamily="@font/arial"
+    android:textSize="14sp"
+    android:textColor="@color/black"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/itemValue">
+
+</TextView>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/itemValue"
+        android:layout_width="wrap_content"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:text="0"
+        android:fontFamily="@font/arial"
+        android:textSize="14sp"
+        android:textColor="@color/disableText"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/item"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </TextView>
+
+    <View
+        android:id="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/item"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgreay"></View>
+</androidx.constraintlayout.widget.ConstraintLayout>

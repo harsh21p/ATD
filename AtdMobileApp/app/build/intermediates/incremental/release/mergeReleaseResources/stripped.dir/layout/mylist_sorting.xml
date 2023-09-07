@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/closeDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="13dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/close" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sort_by"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/closeDialog"
+        app:layout_constraintEnd_toStartOf="@+id/tvClearAll"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvClearAll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CLEAR ALL"
+        android:layout_marginVertical="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/atd_blue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <View
+        android:id="@+id/headerBorder"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:background="@drawable/header_line" />
+
+
+    <TextView
+        android:id="@+id/tvListName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/headerBorder"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/listName"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:paddingVertical="10dp"
+        android:paddingLeft="20dp"
+        android:background="@color/atd_light_blue">
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/rgListName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tvListName">
+
+        <RadioButton
+            android:id="@+id/rbAtoZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:textStyle="bold"
+            android:button="@drawable/radio_button_style"
+            android:text="@string/atoz"
+            android:textColor="@color/black"
+            android:layout_margin="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <RadioButton
+            android:id="@+id/rbZtoA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:textStyle="bold"
+            android:button="@drawable/radio_button_style"
+            android:text="@string/ztoa"
+            android:textColor="@color/black"
+            android:layout_margin="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvTotalItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/rgListName"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/total_items"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:paddingVertical="10dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/atd_light_blue">
+        </TextView>
+        <RadioButton
+            android:id="@+id/rbHighToLow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:textStyle="bold"
+            android:button="@drawable/radio_button_style"
+            android:text="@string/hightTolow"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <RadioButton
+            android:id="@+id/rbLowToHigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:textStyle="bold"
+            android:button="@drawable/radio_button_style"
+            android:text="@string/lowToHigh"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+</RadioGroup>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        layout="@layout/approve_reject_buttons"></include>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

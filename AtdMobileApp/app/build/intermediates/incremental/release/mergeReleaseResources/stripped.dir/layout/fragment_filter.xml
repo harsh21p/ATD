@@ -1,0 +1,1591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.keywordsearch.filterandsort.FilterFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llBrandsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/ivClose"
+            android:paddingTop="16dp"
+            android:layout_weight=".3"
+            android:scaleType="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/close" />
+        <TextView
+            android:id="@+id/tvBrands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_weight="2.4"
+            android:gravity="center"
+            android:text="@string/filter"
+            android:textColor="@color/midnight"/>
+
+        <TextView
+            android:id="@+id/tvClearAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_weight=".3"
+            android:gravity="center"
+            android:text="@string/clear_all"
+            android:textColor="@color/atd_blue"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <View
+        android:id="@+id/viewSelectLocation"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llBrandsHeader" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/viewSelectLocation"
+        app:layout_constraintBottom_toTopOf="@+id/forBottom"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scrollViewForFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llAvailability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvAvailability"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="@string/availability"
+                        android:textColor="@color/baltic_sea"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ellipse_red_garage"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="visible"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvAvailability"
+                        app:layout_constraintTop_toTopOf="@+id/tvAvailability"
+                        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+                    <TextView
+                        android:id="@+id/tv_approval_numbers"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage"
+                        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage"
+                        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage"
+                        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage"
+                        app:layout_constraintVertical_bias="0.333" />
+
+                    <ImageView
+                        android:id="@+id/ivAvailability"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_expand"
+                        android:tag="@string/expand"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dusty_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivAvailability" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/expandableLayoutAvailability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvAvailability"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/llAvailability">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="@string/size"
+                        android:textColor="@color/baltic_sea"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ellipse_red_garage_size"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="visible"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvSize"
+                        app:layout_constraintTop_toTopOf="@+id/tvSize"
+                        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+                    <TextView
+                        android:id="@+id/tv_approval_numbers_size"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage_size"
+                        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage_size"
+                        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage_size"
+                        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage_size"
+                        app:layout_constraintVertical_bias="0.333" />
+
+                    <ImageView
+                        android:id="@+id/ivSize"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_expand"
+                        android:tag="@string/expand"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dusty_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivSize" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/expandableLayoutSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llPrefBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/llSize">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvPrefBrand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="@string/preferred_brands"
+                        android:textColor="@color/baltic_sea"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ellipse_red_garage_size_preferred_brand"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="visible"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvPrefBrand"
+                        app:layout_constraintTop_toTopOf="@+id/tvPrefBrand"
+                        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+                    <TextView
+                        android:id="@+id/tv_approval_numbers_Pref_Brand"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage_size_preferred_brand"
+                        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage_size_preferred_brand"
+                        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage_size_preferred_brand"
+                        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage_size_preferred_brand"
+                        app:layout_constraintVertical_bias="0.333" />
+
+                    <ImageView
+                        android:id="@+id/ivPrefBrand"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_expand"
+                        android:tag="@string/expand"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dusty_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivPrefBrand" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/expandableLayoutPrefBrand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvPrefBrand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llOtherBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/llPrefBrand">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvOtherBrand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="@string/other_brands"
+                        android:textColor="@color/baltic_sea"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ellipse_red_garage_size_other_brand"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="visible"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvOtherBrand"
+                        app:layout_constraintTop_toTopOf="@+id/tvOtherBrand"
+                        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+                    <TextView
+                        android:id="@+id/tv_approval_numbers_Other_Brand"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage_size_other_brand"
+                        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage_size_other_brand"
+                        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage_size_other_brand"
+                        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage_size_other_brand"
+                        app:layout_constraintVertical_bias="0.333" />
+
+
+
+                    <ImageView
+                        android:id="@+id/ivOtherBrand"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_expand"
+                        android:tag="@string/expand"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dusty_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivOtherBrand" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/expandableLayoutOtherBrand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvOtherBrand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/llOtherBrand">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="@string/style"
+                        android:textColor="@color/baltic_sea"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ellipse_red_garage_style"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="visible"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvStyle"
+                        app:layout_constraintTop_toTopOf="@+id/tvStyle"
+                        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+                    <TextView
+                        android:id="@+id/tv_approval_numbers_Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage_style"
+                        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage_style"
+                        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage_style"
+                        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage_style"
+                        app:layout_constraintVertical_bias="0.333" />
+
+                    <ImageView
+                        android:id="@+id/ivStyle"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_expand"
+                        android:tag="@string/expand"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dusty_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivStyle" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/expandableLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llSpeedRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/llStyle">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvSpeedRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="@string/speed_rating"
+                        android:textColor="@color/baltic_sea"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ellipse_red_garage_Speed_Rating"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="visible"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvSpeedRating"
+                        app:layout_constraintTop_toTopOf="@+id/tvSpeedRating"
+                        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+                    <TextView
+                        android:id="@+id/tv_approval_numbers_Speed_Rating"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage_Speed_Rating"
+                        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage_Speed_Rating"
+                        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage_Speed_Rating"
+                        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage_Speed_Rating"
+                        app:layout_constraintVertical_bias="0.333" />
+
+                    <ImageView
+                        android:id="@+id/ivSpeedRating"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_expand"
+                        android:tag="@string/expand"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view6"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dusty_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivSpeedRating" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/expandableLayoutSpeedRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvSpeedRating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llMileageWarranty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/llSpeedRating">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvMileageWarranty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="@string/mileage_warranty"
+                        android:textColor="@color/baltic_sea"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ellipse_red_garage_Mileage_Warranty"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="visible"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvMileageWarranty"
+                        app:layout_constraintTop_toTopOf="@+id/tvMileageWarranty"
+                        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+                    <TextView
+                        android:id="@+id/tv_approval_numbers_Mileage_Warranty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage_Mileage_Warranty"
+                        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage_Mileage_Warranty"
+                        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage_Mileage_Warranty"
+                        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage_Mileage_Warranty"
+                        app:layout_constraintVertical_bias="0.333" />
+
+                    <ImageView
+                        android:id="@+id/ivMileageWarranty"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_expand"
+                        android:tag="@string/expand"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view7"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dusty_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivMileageWarranty" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/expandableLayoutMileageWarranty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvMileageWarranty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llSeasonalDesignation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/llMileageWarranty">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvSeasonalDesignation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="@string/seasonal_designation"
+                        android:textColor="@color/baltic_sea"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ellipse_red_garage_Seasonal_Designation"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="visible"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvSeasonalDesignation"
+                        app:layout_constraintTop_toTopOf="@+id/tvSeasonalDesignation"
+                        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+                    <TextView
+                        android:id="@+id/tv_approval_numbers_Seasonal_Designation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage_Seasonal_Designation"
+                        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage_Seasonal_Designation"
+                        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage_Seasonal_Designation"
+                        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage_Seasonal_Designation"
+                        app:layout_constraintVertical_bias="0.333" />
+
+                    <ImageView
+                        android:id="@+id/ivSeasonalDesignation"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_expand"
+                        android:tag="@string/expand"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view8"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dusty_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivSeasonalDesignation" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/expandableLayoutSeasonalDesignation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvSeasonalDesignation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llRunFlat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/llSeasonalDesignation">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvRunFlat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="@string/run_flat"
+                        android:textColor="@color/baltic_sea"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ellipse_red_garage_Run_Flat"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="visible"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvRunFlat"
+                        app:layout_constraintTop_toTopOf="@+id/tvRunFlat"
+                        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+                    <TextView
+                        android:id="@+id/tv_approval_numbers_Run_Flat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage_Run_Flat"
+                        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage_Run_Flat"
+                        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage_Run_Flat"
+                        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage_Run_Flat"
+                        app:layout_constraintVertical_bias="0.333" />
+
+                    <ImageView
+                        android:id="@+id/ivRunFlat"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_expand"
+                        android:tag="@string/expand"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view9"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dusty_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivRunFlat" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/expandableLayoutRunFlat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvRunFlat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llMarketingPrograms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/llRunFlat">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvMarketingPrograms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="@string/marketing_programs"
+                        android:textColor="@color/baltic_sea"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ellipse_red_garage_Marketing_Programs"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="visible"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvMarketingPrograms"
+                        app:layout_constraintTop_toTopOf="@+id/tvMarketingPrograms"
+                        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+                    <TextView
+                        android:id="@+id/tv_approval_numbers_Marketing_Program"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage_Marketing_Programs"
+                        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage_Marketing_Programs"
+                        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage_Marketing_Programs"
+                        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage_Marketing_Programs"
+                        app:layout_constraintVertical_bias="0.333" />
+
+                    <ImageView
+                        android:id="@+id/ivMarketingPrograms"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_expand"
+                        android:tag="@string/expand"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view10"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dusty_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivMarketingPrograms" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/expandableLayoutMarketingPrograms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvMarketingPrograms"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llRebates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/llMarketingPrograms">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvRebates"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="@string/rebates"
+                        android:textColor="@color/baltic_sea"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ellipse_red_garage_Rebates"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="visible"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvRebates"
+                        app:layout_constraintTop_toTopOf="@+id/tvRebates"
+                        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+                    <TextView
+                        android:id="@+id/tv_approval_numbers_Rebates"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage_Rebates"
+                        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage_Rebates"
+                        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage_Rebates"
+                        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage_Rebates"
+                        app:layout_constraintVertical_bias="0.333" />
+
+                    <ImageView
+                        android:id="@+id/ivRebates"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_expand"
+                        android:tag="@string/expand"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view11"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dusty_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivRebates" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/expandableLayoutRebates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvRebates"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llWheelDiameter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/llRebates">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvWheelDiameter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="@string/wheel_diameter"
+                        android:textColor="@color/baltic_sea"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ellipse_red_garage_Wheel_Diameter"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="visible"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvWheelDiameter"
+                        app:layout_constraintTop_toTopOf="@+id/tvWheelDiameter"
+                        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+                    <TextView
+                        android:id="@+id/tv_approval_numbers_Wheel_Diameter"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage_Wheel_Diameter"
+                        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage_Wheel_Diameter"
+                        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage_Wheel_Diameter"
+                        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage_Wheel_Diameter"
+                        app:layout_constraintVertical_bias="0.333" />
+
+                    <ImageView
+                        android:id="@+id/ivWheelDiameter"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_expand"
+                        android:tag="@string/expand"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view12"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dusty_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivWheelDiameter" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/expandableLayoutWheelDiameter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvWheelDiameter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llWheelWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/llWheelDiameter">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvWheelWidth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="@string/wheel_width"
+                        android:textColor="@color/baltic_sea"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ellipse_red_garage_Wheel_Width"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="visible"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvWheelWidth"
+                        app:layout_constraintTop_toTopOf="@+id/tvWheelWidth"
+                        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+                    <TextView
+                        android:id="@+id/tv_approval_numbers_Wheel_Width"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage_Wheel_Width"
+                        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage_Wheel_Width"
+                        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage_Wheel_Width"
+                        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage_Wheel_Width"
+                        app:layout_constraintVertical_bias="0.333" />
+
+                    <ImageView
+                        android:id="@+id/ivWheelWidth"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_expand"
+                        android:tag="@string/expand"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view13"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dusty_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivWheelWidth" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/expandableLayoutWheelWidth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvWheelWidth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llBoltPattern"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/llWheelWidth">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvBoltPattern"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="@string/bolt_pattern"
+                        android:textColor="@color/baltic_sea"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ellipse_red_garage_Bolt_Pattern"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="visible"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvBoltPattern"
+                        app:layout_constraintTop_toTopOf="@+id/tvBoltPattern"
+                        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+                    <TextView
+                        android:id="@+id/tv_approval_numbers_Bolt_Pattern"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage_Bolt_Pattern"
+                        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage_Bolt_Pattern"
+                        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage_Bolt_Pattern"
+                        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage_Bolt_Pattern"
+                        app:layout_constraintVertical_bias="0.333" />
+
+                    <ImageView
+                        android:id="@+id/ivBoltPattern"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_expand"
+                        android:tag="@string/expand"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view14"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dusty_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivBoltPattern" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/expandableLayoutBoltPattern"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvBoltPattern"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llATDFinish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/llBoltPattern">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvATDFinish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="@string/atd_finish"
+                        android:textColor="@color/baltic_sea"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ellipse_red_garage_ATD_Finish"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="visible"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvATDFinish"
+                        app:layout_constraintTop_toTopOf="@+id/tvATDFinish"
+                        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+                    <TextView
+                        android:id="@+id/tv_approval_numbers_ATD_Finish"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage_ATD_Finish"
+                        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage_ATD_Finish"
+                        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage_ATD_Finish"
+                        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage_ATD_Finish"
+                        app:layout_constraintVertical_bias="0.333" />
+
+                    <ImageView
+                        android:id="@+id/ivATDFinish"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_expand"
+                        android:tag="@string/expand"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view15"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dusty_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivATDFinish" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/expandableLayoutATDFinish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvATDFinish"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llOffsetDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/llATDFinish">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvOffsetDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="@string/offset_description"
+                        android:textColor="@color/baltic_sea"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ellipse_red_garage_Offset_Description"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="visible"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvOffsetDescription"
+                        app:layout_constraintTop_toTopOf="@+id/tvOffsetDescription"
+                        app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+                    <TextView
+                        android:id="@+id/tv_approval_numbers_Offset_Description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage_Offset_Description"
+                        app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage_Offset_Description"
+                        app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage_Offset_Description"
+                        app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage_Offset_Description"
+                        app:layout_constraintVertical_bias="0.333" />
+
+                    <ImageView
+                        android:id="@+id/ivOffsetDescription"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_expand"
+                        android:tag="@string/expand"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view16"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dusty_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivOffsetDescription" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/expandableLayoutOffsetDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvOffsetDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/forBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/viewDivider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="32dp"
+            android:background="@color/atd_blue"
+            app:layout_constraintBottom_toTopOf="@+id/seasonalDesgapply"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <ImageButton
+            android:id="@+id/filterApply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/transparent"
+            android:src="@drawable/apply_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/apply"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </ImageButton>
+    </FrameLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

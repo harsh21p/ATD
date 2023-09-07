@@ -1,0 +1,54 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+trigger:
+  - main
+pr:
+  - main
+
+pool:
+  vmImage: macOS-latest
+
+stages:
+      - stage: PROD
+        displayName: PROD
+        jobs:
+          - job:
+            displayName: Build PROD
+            steps:
+            - checkout: self
+              fetchDepth: 2  
+            - task: Gradle@2
+              inputs:
+                gradleWrapperFile: '$(System.DefaultWorkingDirectory)/AtdMobileApp/gradlew'
+                workingDirectory: '$(System.DefaultWorkingDirectory)/AtdMobileApp'
+                tasks: 'clean assembleRelease'
+                publishJUnitResults: false
+                javaHomeOption: 'JDKVersion'
+                jdkVersionOption: '1.11'
+                gradleOptions: '-Xmx3072m'
+                sonarQubeRunAnalysis: false
+                spotBugsAnalysis: false
+            - task: AndroidSigning@3
+              inputs:
+                apkFiles: '**/*.apk'
+                apksignerKeystoreFile: 'ATDMobile'
+                apksignerKeystorePassword: 'Mok8Q6CtLpMiv3zt3iYR'
+                apksignerKeystoreAlias: 'atd'
+                apksignerKeyPassword: 'Mok8Q6CtLpMiv3zt3iYR'
+                apksignerArguments: '--out $(System.DefaultWorkingDirectory)/AtdMobileApp/app/build/outputs/apk/release/app-release.apk'
+            - task: PublishBuildArtifacts@1
+              inputs:
+                pathtoPublish: '$(System.DefaultWorkingDirectory)/AtdMobileApp/app/build/outputs/apk/release/app-release.apk'
+                artifactName: 'apks'
+                publishLocation: 'container'
+            - task: AppCenterDistribute@3 
+              inputs: 
+                serverEndpoint: 'ATD-Mobile App Center' 
+                appSlug: 'ATD-Mobile/ATD-Mobile' 
+                appFile: '$(System.DefaultWorkingDirectory)/AtdMobileApp/app/build/outputs/apk/release/app-release.apk' 
+                symbolsOption: 'Android' 
+                releaseNotesOption: 'input' 
+                releaseNotesInput: 'PROD' 
+                destinationType: 'groups'

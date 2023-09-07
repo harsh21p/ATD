@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.product.tirerepair.TireRepairFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/forFooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/headerContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="8dp"
+        android:text="@string/product_search_hint"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/brandLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/brand"
+        style="@style/TextViewLabel"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerContent"
+        />
+
+    <TextView
+        android:id="@+id/brandType"
+        android:layout_width="0dp"
+        android:paddingHorizontal="15dp"
+        android:layout_height="wrap_content"
+        style="@style/TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:drawableBottom="@drawable/header_line"
+        app:layout_constraintTop_toBottomOf="@+id/brandLabel"
+        android:text="@string/all"
+        />
+
+    <ImageView
+        android:id="@+id/ivBrandType"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:layout_marginHorizontal="12dp"
+        app:layout_constraintEnd_toEndOf="@id/brandType"
+        app:layout_constraintTop_toTopOf="@+id/brandType"
+        android:backgroundTint="@color/atd_blue"
+        app:layout_constraintBottom_toBottomOf="@id/brandType"
+        android:background="@drawable/right_arrow"></ImageView>
+
+
+    <TextView
+        android:id="@+id/tvSupplierNumberLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/supplier_number"
+        style="@style/TextViewLabel"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brandType"
+        />
+
+    <EditText
+        android:id="@+id/etSupplierNumber"
+        android:layout_width="0dp"
+        android:paddingHorizontal="15dp"
+        android:layout_height="wrap_content"
+        style="@style/TextView"
+        android:text=""
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:drawableBottom="@drawable/header_line"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/tvSupplierNumberLabel"
+        android:hint="@string/enter_supplier_number"
+        />
+
+    <TextView
+        android:id="@+id/tvAtdPartLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/atd_part_number"
+        style="@style/TextViewLabel"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSupplierNumber"
+        />
+
+    <EditText
+        android:id="@+id/etAtdPartNumber"
+        android:layout_width="0dp"
+        android:inputType="text"
+        android:paddingHorizontal="15dp"
+        android:layout_height="wrap_content"
+        style="@style/TextView"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:drawableBottom="@drawable/header_line"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/tvAtdPartLabel"
+        android:hint="@string/enter_part_numbner"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/forFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    <include
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/tireRepairFooter"
+        layout="@layout/product_search_buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

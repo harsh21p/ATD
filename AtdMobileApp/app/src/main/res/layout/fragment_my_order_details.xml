@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tvOrderStatus"
+                android:layout_width="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                style="@font/arial"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tvOrderDate"
+                android:layout_width="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                style="@font/arial"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:backgroundTint="@color/atd_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOrderStatus"
+                android:background="@drawable/header_line"></View>
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tvConfirmation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Confirmation"
+                android:layout_marginTop="5dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOrderStatus" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tvConsumerName"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Consumer Name: "
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:fontFamily="@font/arial"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvConfirmation" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tvPO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="PO#"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:fontFamily="@font/arial"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvInvoice"
+                app:layout_constraintTop_toBottomOf="@+id/tvConsumerName" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tvInvoice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Invoice"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                style="@font/arial"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvPO"
+                app:layout_constraintTop_toBottomOf="@+id/tvConsumerName" />
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="5dp"
+                android:backgroundTint="@color/atd_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvInvoice"
+                android:background="@drawable/header_line"></View>
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tvSubtotal"
+                android:layout_width="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="@string/subtotal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:fontFamily="@font/arial"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvSubtotalValue"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tvSubtotalValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="$0"
+                android:gravity="end"
+                android:layout_marginTop="5dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                style="@font/arial"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvSubtotal"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tvFreight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/freight"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:fontFamily="@font/arial"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvFreightValue"
+                app:layout_constraintTop_toBottomOf="@+id/tvSubtotal" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tvFreightValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="$0"
+                android:gravity="end"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                style="@font/arial"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvFreight"
+                app:layout_constraintTop_toBottomOf="@+id/tvSubtotalValue" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tvTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:fontFamily="@font/arial"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvTotalValue"
+                app:layout_constraintTop_toBottomOf="@+id/tvFreight" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tvTotalValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="$0"
+                android:gravity="end"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                style="@font/arial"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvTotal"
+                app:layout_constraintTop_toBottomOf="@+id/tvFreightValue" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="5dp"
+                android:backgroundTint="@color/lightgreay"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTotal"
+                android:background="@drawable/header_line"></View>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvOrderItemLine"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginVertical="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider3"
+                app:layout_constraintBottom_toTopOf="@+id/tvOrderAgain">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <include
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/ordersSubmitFoote"
+        layout="@layout/approve_reject_buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+
+        android:id="@+id/tvOrderAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/order_again"
+        android:backgroundTint="@color/atd_blue"
+        android:background="@drawable/carved_background_24"
+        app:layout_constraintBottom_toTopOf="@+id/tvPrintOrder"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="15dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvPrintOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/print_order"
+        android:visibility="gone"
+        android:fontFamily="@font/poppins_bold"
+        android:background="@drawable/carved_background_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:textColor="@color/atd_blue"
+        android:gravity="center"
+        android:padding="15dp">
+
+    </TextView>
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:indeterminateDrawable="@drawable/progress_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </ProgressBar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial"
+        android:padding="5dp"
+        android:text="@string/dummyText"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/decreaseQty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/decreaseQty" />
+
+    <ImageView
+        android:id="@+id/decreaseQty"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/decrese"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/QtyValu"
+        app:layout_constraintEnd_toStartOf="@+id/QtyValu"
+        app:layout_constraintTop_toTopOf="@+id/QtyValu" />
+
+    <TextView
+        android:id="@+id/QtyValu"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/light_carved_background_24"
+        android:gravity="center"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"
+        android:text="4"
+        android:textColor="@color/atd_blue"
+        app:layout_constraintEnd_toStartOf="@+id/increaseQty"
+        app:layout_constraintTop_toTopOf="@+id/increaseQty" />
+
+    <ImageView
+        android:id="@+id/increaseQty"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/increse"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

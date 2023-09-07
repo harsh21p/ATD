@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="disableText">#6F6F6F</color>
+    <color name="disable_background">#F5F5F6</color>
+    <dimen name="fab_margin">48dp</dimen>
+    <string name="diameter">Diameter</string>
+    <string name="finish">Finish</string>
+    <string name="lug_bolt_circle">Lugs/Bolt Circle</string>
+    <string name="offset_description">Offset Description</string>
+    <string name="wheel_type">Wheel Type</string>
+    <string name="width">Width</string>
+</resources>

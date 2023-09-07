@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:lineSpacingExtra="4sp"
+        android:padding="5dp"
+        android:text=""
+        android:textAppearance="@style/location_12"
+        android:textStyle="bold"
+        android:fontFamily="@font/arial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:padding="5dp"
+        android:fontFamily="@font/arial"
+        android:layout_marginHorizontal="8dp"
+        android:lineSpacingExtra="4sp"
+        android:textAppearance="@style/location_12"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvAddress2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:drawableLeft="@drawable/addreshome"
+        android:padding="5dp"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/arial"
+        android:layout_marginHorizontal="8dp"
+        android:lineSpacingExtra="4sp"
+        android:textAppearance="@style/location_12"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <ImageView
+        android:id="@+id/ivSeperator2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/horizontalline"
+        android:backgroundTint="@color/lightgreay"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress2"
+        />
+
+    <TextView
+        android:id="@+id/tvSearchText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSeperator2"
+        android:layout_width="wrap_content"
+        android:text="Search"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="8dp"
+        android:fontFamily="@font/arial"
+        android:lineSpacingExtra="0sp"
+        android:textAppearance="@style/text_label"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rlSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/baseline_rectangle_24"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvSearchText"
+        >
+
+        <ImageView
+            android:id="@+id/ivKeywordSearch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/search"
+
+            android:padding="10dp"></ImageView>
+
+        <EditText
+            android:id="@+id/tvKeywordSearch"
+            android:layout_width="match_parent"
+            android:hint="Keyword Search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:layout_toRightOf="@+id/ivKeywordSearch"
+            android:padding="5dp"
+            android:layout_marginHorizontal="8dp"
+            android:textSize="14sp"
+            android:background="@null"
+            android:layout_toLeftOf="@+id/voiceLL"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:id="@+id/voiceLL"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/atd_blue"
+            android:gravity="center"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/ivMicSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/mic"
+                android:backgroundTint="@color/white"
+                android:padding="10dp"
+                ></ImageView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

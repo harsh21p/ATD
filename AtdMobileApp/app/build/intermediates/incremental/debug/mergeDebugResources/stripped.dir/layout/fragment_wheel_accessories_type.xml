@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.product.wheelaccessories.WheelAccessoriesTypeFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/tireTypesHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/ivCloseTireType"
+            android:paddingTop="16dp"
+            android:layout_weight=".5"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/close" />
+        <TextView
+            android:id="@+id/tvBrands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/accessory_types"
+            android:textColor="@color/midnight"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:id="@+id/viewSelectLocation"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tireTypesHeader" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tireTypesHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp">
+        <RadioGroup
+            android:id="@+id/tireTypeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="parent">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:buttonTint="@color/atd_blue"
+                android:text="@string/caps"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:buttonTint="@color/atd_blue"
+                android:text="@string/hubcentric_rings"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:buttonTint="@color/atd_blue"
+                android:text="@string/hub_cover_locks"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:buttonTint="@color/atd_blue"
+                android:text="@string/install_kits"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:buttonTint="@color/atd_blue"
+                android:text="@string/lug_bolts"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:buttonTint="@color/atd_blue"
+                android:text="@string/lug_nuts"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:buttonTint="@color/atd_blue"
+                android:text="@string/tools_and_sockets"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radioButton8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:buttonTint="@color/atd_blue"
+                android:text="@string/wheel_studs"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

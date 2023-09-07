@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card"
+    android:layout_margin="10dp"
+    android:paddingVertical="10dp">
+
+    <CheckBox
+        android:id="@+id/cbProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="@font/arial"
+        android:textStyle="bold"
+        android:text=""
+        android:button="@drawable/check_box_style"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivProduct"
+        app:layout_constraintBottom_toBottomOf="@+id/ivProduct"/>
+
+    <ImageView
+        android:id="@+id/ivProduct"
+        android:layout_marginLeft="10dp"
+
+        android:padding="5dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toEndOf="@+id/cbProduct"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/image_not_available">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/tvProductModel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp"
+        android:text="Product Model"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/atd_blue"
+        app:layout_constraintStart_toEndOf="@+id/ivProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvProductGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp"
+        android:text="Product Group"
+        android:textSize="14sp"
+        android:fontFamily="@font/arial"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintStart_toEndOf="@+id/ivProduct"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductModel" />
+
+    <TextView
+        android:id="@+id/tvProductNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Product #:"
+        android:textSize="14sp"
+        android:fontFamily="@font/arial"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivProduct" />
+
+    <TextView
+        android:id="@+id/tvCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="/Unit"
+        android:textSize="14sp"
+        android:fontFamily="@font/arial"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivProduct" />
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@drawable/header_line"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/lightgreay"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductNum"
+        ></View>
+
+    <TextView
+        android:id="@+id/tvLocal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp"
+        android:text="Local"
+        android:textSize="12sp"
+        android:fontFamily="@font/arial"
+        android:layout_marginLeft="10dp"
+        android:paddingVertical="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvLocalPlus"
+        app:layout_constraintTop_toBottomOf="@+id/viewDivider" />
+
+    <TextView
+        android:id="@+id/tvLocalValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp"
+        android:textSize="12sp"
+        android:text="0"
+        android:fontFamily="@font/arial"
+        android:layout_marginLeft="10dp"
+        android:paddingVertical="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvLocalPlusValue"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocal" />
+
+    <TextView
+        android:id="@+id/tvLocalPlus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp"
+        android:text="Local+"
+        android:textSize="12sp"
+        android:fontFamily="@font/arial"
+        android:paddingVertical="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvNational"
+        app:layout_constraintStart_toEndOf="@+id/tvLocal"
+        app:layout_constraintTop_toBottomOf="@+id/viewDivider" />
+
+    <TextView
+        android:id="@+id/tvLocalPlusValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp"
+        android:text="0"
+        android:textSize="12sp"
+        android:fontFamily="@font/arial"
+        app:layout_constraintEnd_toStartOf="@+id/tvNationalValue"
+        android:paddingVertical="2dp"
+        app:layout_constraintStart_toStartOf="@+id/tvLocalPlus"
+       app:layout_constraintEnd_toEndOf="@+id/tvNationalValue"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocalPlus" />
+
+
+    <TextView
+        android:id="@+id/tvNational"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp"
+        android:text="National"
+        android:textSize="12sp"
+        android:fontFamily="@font/arial"
+        android:paddingVertical="2dp"
+        app:layout_constraintStart_toEndOf="@+id/tvLocalPlus"
+        app:layout_constraintTop_toBottomOf="@+id/viewDivider" />
+
+    <TextView
+        android:id="@+id/tvNationalValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp"
+        android:text="0"
+        android:textSize="12sp"
+        android:fontFamily="@font/arial"
+        android:paddingVertical="2dp"
+        app:layout_constraintStart_toStartOf="@+id/tvNational"
+        app:layout_constraintStart_toEndOf="@+id/tvLocalPlusValue"
+        app:layout_constraintTop_toBottomOf="@+id/tvNational"
+        app:layout_constraintEnd_toEndOf="@id/tvNational"/>
+
+    <ImageView
+        android:id="@+id/decreaseQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/viewDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toStartOf="@+id/QtyValu"
+        android:background="@drawable/decrese"
+
+        />
+
+    <EditText
+        android:id="@+id/QtyValu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/light_carved_background_24"
+        android:gravity="center"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@+id/viewDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/increaseQty"/>
+
+    <ImageView
+        android:id="@+id/increaseQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/viewDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/increse"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

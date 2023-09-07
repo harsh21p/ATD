@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navg_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.atd.atdmobileapp.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_onBoardingFragment"
+            app:destination="@id/onBoardingFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_boottomNavigation"
+            app:destination="@id/boottomNavigation"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_chooseProfileFragment"
+            app:destination="@id/chooseProfileFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.atd.atdmobileapp.ui.onboarding.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" >
+        <action
+            android:id="@+id/action_onBoardingFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/boottomNavigation"
+        android:name="com.atd.atdmobileapp.ui.bottomnavigation.BottomNavigationScreenFragment"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_home_to_accountFragment"
+            app:destination="@id/accountFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_home_to_myGarageFragment"
+            app:destination="@id/myGarage"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_boottomNavigation_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_boottomNavigation_to_chooseProfileFragment"
+            app:destination="@id/chooseProfileFragment" />
+        <action
+            android:id="@+id/action_boottomNavigation_to_preferencesFragment"
+            app:destination="@id/preferencesFragment" />
+        <action
+            android:id="@+id/action_vinFragment_to_barcodeFragment"
+            app:destination="@id/barcodeFragment" />
+        <action
+            android:id="@+id/action_barcodeFragment_to_vinFragment"
+            app:destination="@id/vinFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/vinFragment"/>
+        <action
+            android:id="@+id/action_myordersSearchFragment_to_BottomNavigation"
+            app:destination="@id/boottomNavigation"
+            />
+        <action
+            android:id="@+id/action_myordersDetailsFragment_to_BottomNavigation"
+            app:destination="@id/boottomNavigation"
+            />
+        <action
+            android:id="@+id/fragment_keyword_results_to_bottom_noavigation"
+            app:destination="@+id/boottomNavigation"></action>
+        <action
+            android:id="@+id/action_boottomNavigation_to_selectLocation"
+            app:destination="@id/selectLocation" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.atd.atdmobileapp.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_boottomNavigation"
+            app:destination="@id/boottomNavigation" />
+        <action
+            android:id="@+id/action_loginFragment_to_chooseProfileFragment"
+            app:destination="@id/chooseProfileFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_selectLocation"
+            app:destination="@id/selectLocation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.atd.atdmobileapp.ui.bottomnavigation.account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/myGarage"
+        android:name="com.atd.atdmobileapp.ui.bottomnavigation.mygarage.MyGarageFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/HomeTabFragment"
+        android:name="com.atd.atdmobileapp.ui.bottomnavigation.hometabscreen.HomeTabFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_sub_home" >
+
+        <action
+            android:id="@+id/action_home_tab_to_keyword_search"
+            app:destination="@id/keyWordSearch"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/chooseProfileFragment"
+        android:name="com.atd.atdmobileapp.ui.chooseprofile.ChooseProfileFragment"
+        android:label="ChooseProfileFragment"
+        tools:layout="@layout/fragment_choose_profile">
+        <action
+            android:id="@+id/action_chooseProfileFragment_to_selectLocation"
+            app:destination="@id/selectLocation"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/keyWordSearch"
+        android:name="com.atd.atdmobileapp.ui.keywordsearch.keywordrecentsearches.KeyWordSearchFragment"
+        android:label="fragment_keyword_search"
+        tools:layout="@layout/fragment_key_word_search" />
+
+    <fragment
+        android:id="@+id/keyWordSearchResults"
+        android:name="com.atd.atdmobileapp.ui.keywordsearch.keywordsearchresults.KeywordSearchResultsFragment"
+        android:label="fragment_keyword_search"
+        app:popUpTo="@id/keyWordSearch"
+        app:launchSingleTop="true"
+        popUpToInclusive="true"
+        tools:layout="@layout/fragment_keyword_search_resukts" >
+
+        <action
+            android:id="@+id/fragment_keyword_results_to_bottom_noavigation"
+            app:destination="@+id/boottomNavigation"></action>
+    </fragment>
+    <fragment
+        android:id="@+id/selectLocation"
+        android:name="com.atd.atdmobileapp.ui.selectlocation.SelectLocation"
+        android:label="fragment_select_location"
+        tools:layout="@layout/fragment_select_location" >
+        <action
+            android:id="@+id/action_selectLocation_to_chooseProfileFragment"
+            app:destination="@id/chooseProfileFragment" />
+        <action
+            android:id="@+id/action_selectLocation_to_boottomNavigation"
+            app:destination="@id/boottomNavigation" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/preferencesFragment"
+        android:name="com.atd.atdmobileapp.ui.bottomnavigation.account.preferences.PreferencesFragment"
+        android:label="fragment_preferences"
+        tools:layout="@layout/fragment_preferences" >
+        <action
+            android:id="@+id/action_preferencesFragment_to_boottomNavigation2"
+            app:destination="@id/boottomNavigation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/vinFragment"
+        android:name="com.atd.atdmobileapp.ui.vin.VINFragment"
+        android:label="fragment_v_i_n"
+        tools:layout="@layout/fragment_v_i_n" >
+        <action
+            android:id="@+id/action_vinFragment_to_barcodeFragment"
+            app:destination="@id/barcodeFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/barcodeFragment"
+        android:name="com.atd.atdmobileapp.ui.vin.BarcodeFragment"
+        android:label="fragment_barcode"
+        tools:layout="@layout/fragment_barcode">
+        <action
+            android:id="@+id/action_barcodeFragment_to_vinFragment"
+            app:destination="@id/vinFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/vinFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/myordersSearchFragment"
+        android:name="com.atd.atdmobileapp.ui.bottomnavigation.homescreen.myorders.MyOrdersSearchFragment"
+        android:label="fragment_my_orders_search"
+        tools:layout="@layout/fragment_my_orders_search">
+        <action
+            android:id="@+id/action_myordersSearchFragment_to_BottomNavigation"
+            app:destination="@id/boottomNavigation"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/myordersDetailsFragment"
+        android:name="com.atd.atdmobileapp.ui.bottomnavigation.homescreen.myorders.myorderdetails.MyOrderDetailsFragment"
+        android:label="fragment_my_orders_details"
+        tools:layout="@layout/fragment_my_order_details">
+        <action
+            android:id="@+id/action_myordersDetailsFragment_to_BottomNavigation"
+            app:destination="@id/boottomNavigation"
+            />
+    </fragment>
+</navigation>

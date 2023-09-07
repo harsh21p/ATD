@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvProductTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Product"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvProductStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="no status"
+        android:drawablePadding="5dp"
+        android:padding="10dp"
+        style="@font/arial"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvProductCost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductTitle" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvProductCost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="$0"
+        android:drawablePadding="5dp"
+        android:padding="10dp"
+        style="@font/arial"
+        android:gravity="end"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvProductStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductTitle" />
+
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvProductDate"
+        android:layout_width="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:fontFamily="@font/arial"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvReturn"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductStatus" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvReturn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/returns"
+        android:textColor="@color/atd_blue"
+        android:gravity="end"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        style="@font/arial"
+        android:visibility="gone"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvProductDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductCost" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvQtnty"
+        android:layout_width="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:text="@string/qty"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:fontFamily="@font/arial"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvDeliveryDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductDate" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvDeliveryDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/deliverydate"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        style="@font/arial"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvMethod"
+        app:layout_constraintStart_toEndOf="@+id/tvQtnty"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductDate" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvMethod"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/method"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        style="@font/arial"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvDeliveryDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductDate" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvQtntyValue"
+        android:layout_width="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:fontFamily="@font/arial"
+        android:textSize="14sp"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvDeliveryDateValue"
+        app:layout_constraintTop_toBottomOf="@+id/tvQtnty" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvDeliveryDateValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        style="@font/arial"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/tvMethodValue"
+        app:layout_constraintStart_toEndOf="@+id/tvQtntyValue"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeliveryDate" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvMethodValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        style="@font/arial"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvDeliveryDateValue"
+        app:layout_constraintTop_toBottomOf="@+id/tvMethod" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/qtydevider"
+        android:layout_width="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:fontFamily="@font/arial"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductDate" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/qtydevider2"
+        android:layout_width="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:fontFamily="@font/arial"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qtydevider" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvDc"
+        app:layout_constraintTop_toBottomOf="@+id/qtydevider2">
+
+    </View>
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvSupplier"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.4"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:text="@string/supplier"
+        android:paddingVertical="5dp"
+        android:fontFamily="@font/arial"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvDc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/dc"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        style="@font/arial"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvSupplier"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvSupplierValue"
+        android:layout_width="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:text=""
+        android:paddingVertical="5dp"
+        android:fontFamily="@font/arial"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvSupplier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSupplier" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvDcValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        style="@font/arial"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/tvSupplierValue"
+
+        app:layout_constraintTop_toBottomOf="@+id/tvDc" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvCustomerComments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Comments"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        style="@font/arial"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSupplierValue" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvCustomerCommentsValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        style="@font/arial"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCustomerComments" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/devider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:paddingHorizontal="10dp"
+        android:layout_margin="10dp"
+        android:paddingVertical="5dp"
+        style="@font/arial"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:backgroundTint="@color/lightgreay"
+        android:background="@drawable/header_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCustomerCommentsValue" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

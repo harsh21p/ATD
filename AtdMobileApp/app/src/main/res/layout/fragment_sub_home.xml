@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.bottomnavigation.hometabscreen.HomeTabFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeOptions"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <include layout="@layout/location" android:id="@+id/location_layout"/>
+
+
+
+        <TextView
+            android:id="@+id/product"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.45"
+            app:layout_constraintTop_toBottomOf="@+id/location_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="Product"
+            android:padding="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/product"
+            android:textSize="15dp"
+            android:background="#E1EBF4"/>
+
+        <TextView
+            android:id="@+id/vehicle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#E1EBF4"
+            android:drawableTop="@drawable/vehicle"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Vehicle"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_layout"
+            app:layout_constraintWidth_percent="0.45" />
+
+        <TextView
+            android:id="@+id/tvLicencePlate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.45"
+            app:layout_constraintTop_toBottomOf="@+id/product"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="License Plate"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="15dp"
+            android:background="#E1EBF4"
+            android:drawableTop="@drawable/licenseplate" />
+        <TextView
+            android:id="@+id/tvVin"
+            app:layout_constraintWidth_percent="0.45"
+            app:layout_constraintTop_toBottomOf="@+id/vehicle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#E1EBF4"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="VIN"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:drawableTop="@drawable/vin" />
+        <TextView
+            android:id="@+id/tvBarCode"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.45"
+            app:layout_constraintTop_toBottomOf="@+id/tvLicencePlate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="Bar Code"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="15dp"
+            android:background="#E1EBF4"
+            android:drawableTop="@drawable/barcode"
+            />
+
+        <TextView
+            android:id="@+id/tvRebates"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#E1EBF4"
+            android:drawableTop="@drawable/rebate"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Rebates"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvVin"
+            app:layout_constraintWidth_percent="0.45" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ads"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBarCode"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            />
+        <!--            <me.relex.circleindicator.CircleIndicator-->
+        <!--                android:id="@+id/SliderDots"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/ads"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="48dp"-->
+        <!--                android:layout_margin="10dp"-->
+        <!--                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationViewFrame"-->
+        <!--                android:elevation="4dp"/>-->
+
+
+
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:indeterminateDrawable="@drawable/progress_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        </ProgressBar>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:id="@+id/tblLayot"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/homeOptions"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/myOrders"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="My Orders"
+            android:textColor="@color/atd_blue"
+            android:drawableBottom="@drawable/horizontalline"
+            android:drawablePadding="10dp"
+            android:layout_margin="10dp"
+            android:drawableTint="@color/atd_blue"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_weight="1">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/myQuotes"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="My Quotes"
+            android:textColor="@color/black"
+            android:drawableBottom="@drawable/horizontalline"
+            android:drawablePadding="10dp"
+            android:layout_margin="10dp"
+            android:drawableTint="#00FFFFFF"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_weight="1">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/approvals"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="Approvals"
+            android:textColor="@color/black"
+            android:drawableBottom="@drawable/horizontalline"
+            android:drawablePadding="10dp"
+            android:layout_margin="10dp"
+            android:drawableTint="#00FFFFFF"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_weight="1">
+
+        </TextView>
+
+    </LinearLayout>
+   <!-- <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        />-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeTabScreens"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblLayot"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+

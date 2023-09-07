@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.vin.VINFragment">
+
+    <TextView
+        android:id="@+id/tvState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/state"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:imeOptions="actionDone"
+        android:imeActionLabel="Enter"
+        android:inputType="text"
+        android:id="@+id/etState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial"
+        android:textSize="14sp"
+        android:paddingRight="40dp"
+        android:paddingLeft="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:hint="@string/choose_state"
+        android:text=""
+        android:backgroundTint="@color/atd_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvState"
+        ></TextView>
+    <View
+        android:id="@+id/devider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingLeft="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:backgroundTint="@color/atd_blue"
+        android:background="@drawable/header_line"
+        app:layout_constraintTop_toBottomOf="@+id/etState">
+
+    </View>
+
+    <ImageView
+        android:id="@+id/ivState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/etState"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/etState"
+        android:layout_marginHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/right_arrow"
+        />
+
+
+    <TextView
+        android:id="@+id/tvLicencePlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etState"
+        android:text="@string/license_plate"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:imeOptions="actionDone"
+        android:imeActionLabel="Enter"
+        android:inputType="text"
+        android:id="@+id/etLicencePlate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial"
+        android:textSize="14sp"
+        android:paddingRight="40dp"
+        android:paddingLeft="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:hint="@string/et_licence_plate"
+        android:text=""
+        android:backgroundTint="@color/atd_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLicencePlate"
+        ></EditText>
+
+    <ImageView
+        android:id="@+id/ivLicencePlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/etLicencePlate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/etLicencePlate"
+        android:layout_marginHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/camera"
+        />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:indeterminateDrawable="@drawable/progress_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/noResultTv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noResWheel"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/noResultTv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/arial"
+        android:visibility="gone"
+        android:text="@string/noResSubLine"
+        android:textColor="@color/dusty_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noResultTv1" />
+    <TextView
+        android:id="@+id/tvSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@color/disable_background"
+        android:textColor="@color/disableText"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="16sp"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

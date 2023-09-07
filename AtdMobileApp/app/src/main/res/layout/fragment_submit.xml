@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.bottomnavigation.homescreen.approvals.submitaprovals.SubmitApprovalsFragment">
+
+
+    <TextView
+        android:id="@+id/tvPendingApprovals"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/pending_approvals"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="top"
+        android:padding="10dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvSelectAll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/atd_blue"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/select_all"
+        android:fontFamily="@font/arial"
+        android:textStyle="bold"
+        android:gravity="top"
+        android:paddingHorizontal="10dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPendingApprovals"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMyApprovals"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSelectAll"
+        app:layout_constraintBottom_toTopOf="@+id/ordersSubmitFoote"
+        android:layout_marginVertical="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/ordersSubmitFoote"
+        layout="@layout/approve_reject_buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:indeterminateDrawable="@drawable/progress_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </ProgressBar>
+
+    <ImageView
+        android:id="@+id/noReviewImg"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:src="@drawable/noreview"
+        app:layout_constraintBottom_toTopOf="@+id/tvNoReview"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvNoReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="You have no orders to review.">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="8dp"
+    tools:context=".ui.vehicle.VehicleSearch">
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressbarVehicle"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:indeterminateDrawable="@drawable/progress_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </ProgressBar>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/arial"
+            android:text="@string/year"
+            android:textColorHint="@color/dusty_gray"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/chooseYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/arial"
+            android:hint="@string/choose_year"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/year"
+            app:layout_constraintTop_toBottomOf="@+id/year" />
+
+        <View
+            android:id="@+id/viewDiv1"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/atd_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/chooseYear"
+            app:layout_constraintTop_toBottomOf="@+id/chooseYear" />
+
+        <ImageView
+            android:id="@+id/chooseYearDropDown"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/right_arrow_atd"
+            app:layout_constraintBottom_toTopOf="@+id/viewDiv1"
+            app:layout_constraintEnd_toEndOf="@+id/viewDiv1" />
+
+        <TextView
+            android:id="@+id/make"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/arial"
+            android:text="@string/make"
+            android:textColor="@color/dusty_gray"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/year"
+            app:layout_constraintStart_toStartOf="@+id/chooseYear"
+            app:layout_constraintTop_toBottomOf="@+id/viewDiv1" />
+
+        <TextView
+            android:id="@+id/chooseMake"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/arial"
+            android:hint="@string/choose_make"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/make"
+            app:layout_constraintStart_toStartOf="@+id/chooseYear"
+            app:layout_constraintTop_toBottomOf="@+id/make" />
+
+        <View
+            android:id="@+id/viewDiv2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/atd_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/chooseMake"
+            app:layout_constraintTop_toBottomOf="@+id/chooseMake" />
+
+        <ImageView
+            android:id="@+id/chooseMakeDropDown"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/right_arrow_atd"
+            app:layout_constraintBottom_toTopOf="@+id/viewDiv2"
+            app:layout_constraintEnd_toEndOf="@+id/viewDiv2"
+            app:layout_constraintTop_toTopOf="@+id/chooseMake" />
+
+
+        <TextView
+            android:id="@+id/model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/arial"
+            android:text="@string/model"
+            android:textColor="@color/dusty_gray"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/make"
+            app:layout_constraintStart_toStartOf="@+id/chooseMake"
+            app:layout_constraintTop_toBottomOf="@+id/viewDiv2" />
+
+        <TextView
+            android:id="@+id/chooseModel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/arial"
+            android:hint="@string/choose_model"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/model"
+            app:layout_constraintStart_toStartOf="@+id/chooseMake"
+            app:layout_constraintTop_toBottomOf="@+id/model" />
+
+        <View
+            android:id="@+id/viewDiv3"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/atd_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/chooseModel"
+            app:layout_constraintTop_toBottomOf="@+id/chooseModel" />
+
+        <ImageView
+            android:id="@+id/chooseModelDropDown"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/right_arrow_atd"
+            app:layout_constraintBottom_toTopOf="@+id/viewDiv3"
+            app:layout_constraintEnd_toEndOf="@+id/viewDiv3"
+            app:layout_constraintTop_toTopOf="@+id/chooseModel" />
+
+        <TextView
+            android:id="@+id/trim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/arial"
+            android:text="@string/trim"
+            android:textColor="@color/dusty_gray"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/trim"
+            app:layout_constraintStart_toStartOf="@+id/chooseModel"
+            app:layout_constraintTop_toBottomOf="@+id/viewDiv3" />
+
+        <TextView
+            android:id="@+id/chooseTrim"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/arial"
+            android:hint="@string/choose_trim"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/trim"
+            app:layout_constraintStart_toStartOf="@+id/chooseModel"
+            app:layout_constraintTop_toBottomOf="@+id/trim" />
+
+        <View
+            android:id="@+id/viewDiv4"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/atd_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/chooseTrim"
+            app:layout_constraintTop_toBottomOf="@+id/chooseTrim" />
+
+        <ImageView
+            android:id="@+id/chooseTrimDropDown"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/right_arrow_atd"
+            app:layout_constraintBottom_toTopOf="@+id/viewDiv4"
+            app:layout_constraintEnd_toEndOf="@+id/viewDiv4"
+            app:layout_constraintTop_toTopOf="@+id/chooseTrim" />
+
+
+
+        <TextView
+            android:id="@+id/oeSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/arial"
+            android:text="@string/oe_size"
+            android:textColor="@color/dusty_gray"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/oeSize"
+            app:layout_constraintStart_toStartOf="@+id/chooseTrim"
+            app:layout_constraintTop_toBottomOf="@+id/viewDiv4" />
+
+        <TextView
+            android:id="@+id/chooseOESize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/arial"
+            android:hint="@string/choose_an_option"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/oeSize"
+            app:layout_constraintStart_toStartOf="@+id/chooseTrim"
+            app:layout_constraintTop_toBottomOf="@+id/oeSize" />
+
+        <View
+            android:id="@+id/viewDiv5"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/atd_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/chooseOESize"
+            app:layout_constraintTop_toBottomOf="@+id/chooseOESize" />
+
+        <ImageView
+            android:id="@+id/chooseOESizeDropDown"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/right_arrow_atd"
+            app:layout_constraintBottom_toTopOf="@+id/viewDiv5"
+            app:layout_constraintEnd_toEndOf="@+id/viewDiv5"
+            app:layout_constraintTop_toTopOf="@+id/chooseOESize" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/forFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <include
+            android:id="@+id/bottomButtons"
+            layout="@layout/product_search_footer"
+            app:flow_verticalAlign="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

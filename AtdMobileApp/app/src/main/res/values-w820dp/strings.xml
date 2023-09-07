@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wheel_type">Wheel Type</string>
+    <string name="diameter">Diameter</string>
+    <string name="width">Width</string>
+    <string name="lug_bolt_circle">Lugs/Bolt Circle</string>
+    <string name="finish">Finish</string>
+    <string name="offset_description">Offset Description</string>
+</resources>

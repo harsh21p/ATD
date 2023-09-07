@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "233375162922",
+    "firebase_url": "https://atd-ecom-prd-default-rtdb.firebaseio.com",
+    "project_id": "atd-ecom-prd",
+    "storage_bucket": "atd-ecom-prd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233375162922:android:6e4365ba5d4ab357591953",
+        "android_client_info": {
+          "package_name": "com.atd.atdmobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "233375162922-5uhrn2q9b0av6cnlkq5kru9gejikr68f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgixeWN_ft3o6BVBlr9PGDuG6L1OrIaA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "233375162922-5uhrn2q9b0av6cnlkq5kru9gejikr68f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "233375162922-6jb8jar9f4515btshan80e3onbsihdne.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.atd.ntdmobileapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233375162922:android:2cc07a1e05b9a856591953",
+        "android_client_info": {
+          "package_name": "com.atd.ntdmobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "233375162922-5uhrn2q9b0av6cnlkq5kru9gejikr68f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgixeWN_ft3o6BVBlr9PGDuG6L1OrIaA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "233375162922-5uhrn2q9b0av6cnlkq5kru9gejikr68f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "233375162922-6jb8jar9f4515btshan80e3onbsihdne.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.atd.ntdmobileapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

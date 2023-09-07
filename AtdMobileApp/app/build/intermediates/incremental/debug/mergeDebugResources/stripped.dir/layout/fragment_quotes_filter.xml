@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.bottomnavigation.homescreen.myquotes.QuotesFilterFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llBrandsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/ivClose"
+            android:paddingTop="16dp"
+            android:layout_weight=".3"
+            android:scaleType="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/close" />
+        <TextView
+            android:id="@+id/tvBrands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_weight="2.4"
+            android:gravity="center"
+            android:text="@string/filter"
+            android:textColor="@color/midnight"/>
+
+        <TextView
+            android:id="@+id/tvClearAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_weight=".3"
+            android:gravity="center"
+            android:text="@string/clear_all"
+            android:textColor="@color/atd_blue"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:id="@+id/viewSelectLocation"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llBrandsHeader" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@+id/viewSelectLocation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:text="@string/status"
+                android:textColor="@color/baltic_sea"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ellipse_red_garage"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="visible"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvStatus"
+                app:layout_constraintTop_toTopOf="@+id/tvStatus"
+                app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+            <TextView
+                android:id="@+id/tv_approval_numbers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:paddingTop="3dp"
+                android:text=""
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage"
+                app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage"
+                app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage"
+                app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage"
+                app:layout_constraintVertical_bias="0.333" />
+
+            <ImageView
+                android:id="@+id/ivStatus"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_expand"
+                android:tag="@string/expand"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/dusty_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivStatus" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/expandableLayoutStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llLastMOdified"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/llStatus">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/touchForLastModified"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvLastModified"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:text="@string/last_modified"
+                android:textColor="@color/baltic_sea"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ellipse_red_garage_last_modified"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvLastModified"
+                app:layout_constraintTop_toTopOf="@+id/tvLastModified"
+                app:srcCompat="@drawable/ellipse_red_my_garage" />
+
+            <TextView
+                android:id="@+id/tv_approval_numbers_last_modified"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:paddingTop="3dp"
+                android:text="@string/_1"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/ellipse_red_garage_last_modified"
+                app:layout_constraintEnd_toEndOf="@+id/ellipse_red_garage_last_modified"
+                app:layout_constraintStart_toStartOf="@+id/ellipse_red_garage_last_modified"
+                app:layout_constraintTop_toTopOf="@+id/ellipse_red_garage_last_modified"
+                app:layout_constraintVertical_bias="0.333" />
+
+            <ImageView
+                android:id="@+id/ivLastModified"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_expand"
+                android:tag="@string/expand"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/dusty_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivLastModified" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/expandableLayoutLastModified"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/touchForNone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivNone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:tag="unselected"
+                    android:src="@drawable/unselected_radio_button"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_margin="4dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/none"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/ivNone"
+                    app:layout_constraintTop_toTopOf="@+id/ivNone"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivNone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:gravity="center|left"
+                    android:layout_marginStart="16dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/touchFor24Hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivLast24Hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="unselected"
+                    android:gravity="center|left"
+                    android:src="@drawable/unselected_radio_button"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_margin="4dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/last_24_hours"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/ivLast24Hours"
+                    app:layout_constraintTop_toTopOf="@+id/ivLast24Hours"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivLast24Hours"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:gravity="center|left"
+                    android:layout_marginStart="16dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/touchLast7Days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivLast7days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:tag="unselected"
+                    android:src="@drawable/unselected_radio_button"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_margin="4dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/last_7_days"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/ivLast7days"
+                    app:layout_constraintTop_toTopOf="@+id/ivLast7days"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivLast7days"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:gravity="center|left"
+                    android:layout_marginStart="16dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/touchForLast30Days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivLast30days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:src="@drawable/unselected_radio_button"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:tag="unselected"
+                    android:layout_margin="4dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/last_30_days"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/ivLast30days"
+                    app:layout_constraintTop_toTopOf="@+id/ivLast30days"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivLast30days"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:gravity="center|left"
+                    android:layout_marginStart="16dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/touchForSpecifyDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivSpecifyDateRange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:src="@drawable/unselected_radio_button"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_margin="4dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/specify_date_range"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/ivSpecifyDateRange"
+                    app:layout_constraintTop_toTopOf="@+id/ivSpecifyDateRange"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivSpecifyDateRange"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:gravity="center|left"
+                    android:layout_marginStart="16dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <include
+                android:id="@+id/startDate"
+                layout="@layout/date_select_layout"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+
+            <include
+                android:id="@+id/endDate"
+                layout="@layout/date_select_layout"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+
+
+        </LinearLayout>
+        </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <FrameLayout
+        android:id="@+id/forBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/viewDivider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="32dp"
+            android:background="@color/atd_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <ImageButton
+            android:id="@+id/filterApply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/transparent"
+            android:src="@drawable/apply_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/apply"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </ImageButton>
+    </FrameLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

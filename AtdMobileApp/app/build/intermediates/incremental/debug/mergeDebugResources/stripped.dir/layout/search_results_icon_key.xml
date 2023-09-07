@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/card_curved">
+
+
+    <ImageView
+        android:id="@+id/closeDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/close" />
+
+    <TextView
+        android:id="@+id/iconkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:padding="10dp"
+        android:text=" Icon Key"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/closeDialog" />
+
+
+
+
+    <TextView
+        android:id="@+id/tvOE"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:fontFamily="@font/arial"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Original Equipment"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/oe"
+        app:layout_constraintTop_toBottomOf="@+id/iconkey"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvValuebuys"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:fontFamily="@font/arial"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Value Buys"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/valubuys"
+        app:layout_constraintStart_toStartOf="@+id/tvOE"
+        app:layout_constraintTop_toBottomOf="@+id/tvOE" />
+
+
+
+    <TextView
+        android:id="@+id/tvMarktProgm"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/arial"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Marketing Program"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/marketingprogram"
+        app:layout_constraintStart_toStartOf="@+id/tvValuebuys"
+        app:layout_constraintTop_toBottomOf="@+id/tvValuebuys" />
+
+
+
+    <TextView
+        android:id="@+id/tvTotalAccessProgram"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/arial"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:text="Total Access Program"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/totalaccess"
+        app:layout_constraintStart_toStartOf="@+id/tvOE"
+        app:layout_constraintTop_toBottomOf="@+id/tvMarktProgm" />
+
+
+    <TextView
+        android:id="@+id/tvNewProduct"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/arial"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:text="New Product"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/newicon"
+        app:layout_constraintStart_toStartOf="@+id/tvTotalAccessProgram"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalAccessProgram" />
+
+
+    <TextView
+        android:id="@+id/tvQuickShip"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Quick Ship"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/quickship"
+        app:layout_constraintStart_toStartOf="@+id/tvNewProduct"
+        app:layout_constraintTop_toBottomOf="@+id/tvNewProduct" />
+
+
+
+    <TextView
+        android:id="@+id/tvHubCentric"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/arial"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:text="Hub Centric"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/hubcentric"
+        app:layout_constraintStart_toStartOf="@+id/tvQuickShip"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuickShip" />
+
+
+
+    <TextView
+        android:id="@+id/tv3PeakMtnSnowflake"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="3 Peak Mtn Snowflake"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/mountain"
+        app:layout_constraintStart_toStartOf="@+id/tvHubCentric"
+        app:layout_constraintTop_toBottomOf="@+id/tvHubCentric" />
+
+
+    <TextView
+        android:id="@+id/tvWinter"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Winter"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/snowflake"
+        app:layout_constraintStart_toStartOf="@+id/tv3PeakMtnSnowflake"
+        app:layout_constraintTop_toBottomOf="@+id/tv3PeakMtnSnowflake"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
